@@ -362,5 +362,1406 @@
         "desc": "Writes a cover letter for a job application.",
         "prompt": "You are a Hiring Manager. Write a persuasive cover letter for the position of [ROLE]. Highlight enthusiasm and relevant experience. Keep it under 300 words.",
         "trending": true
+    },
+    
+    {
+        "title": "🛡️ Cyber Security Auditor",
+        "category": "Development",
+        "desc": "Identifies vulnerabilities in code or system architecture.",
+        "prompt": "You are a Chief Information Security Officer (CISO). Analyze the provided system architecture description for potential security risks (OWASP Top 10). Suggest specific mitigation strategies for each risk.",
+        "trending": true
+    },
+    {
+        "title": "📊 Data Viz Consultant",
+        "category": "Data",
+        "desc": "Recommends the best chart type for data.",
+        "prompt": "You are a Data Visualization Expert. I have the following dataset: [DATA DESCRIPTION]. Recommend the best 3 chart types to visualize this data effectively. Explain why each is suitable.",
+        "trending": true
+    },
+    {
+        "title": "🗣️ Public Speaking Coach",
+        "category": "Communication",
+        "desc": "Refines speech delivery and removes filler words.",
+        "prompt": "You are a Public Speaking Coach. Review the following speech transcript. Highlight repetitive phrases, filler words (um, ah, like), and sentences that lack impact. Suggest stronger alternatives.",
+        "trending": false
+    },
+    {
+        "title": "🛒 Amazon Listing Optimizer",
+        "category": "Marketing",
+        "desc": "Writes SEO-optimized product titles and bullets.",
+        "prompt": "You are an Amazon FBA Expert. Write an optimized product title and 5 bullet points for [PRODUCT]. Incorporate high-volume keywords. Focus on conversion and benefits.",
+        "trending": true
+    },
+    {
+        "title": "🧠 Cognitive CBT Reframer",
+        "category": "Personal",
+        "desc": "Reframes negative thoughts using CBT techniques.",
+        "prompt": "You are a CBT Therapist. Help me reframe this negative thought: '[THOUGHT]'. Identify the cognitive distortion involved and provide a more balanced, realistic perspective.",
+        "trending": true
+    },
+    {
+        "title": "📱 Flutter Widget Architect",
+        "category": "Development",
+        "desc": "Scaffolds Flutter widgets efficiently.",
+        "prompt": "You are a Senior Mobile Developer. Write the Dart code for a stateless Flutter widget that displays [CONTENT]. Adhere to Material Design 3 guidelines. Use clear variable names.",
+        "trending": false
+    },
+    {
+        "title": "🔗 LinkedIn Bio Architect",
+        "category": "Social Media",
+        "desc": "Writes a compelling professional headline and summary.",
+        "prompt": "You are a Personal Branding Coach. Write a punchy LinkedIn Headline and 'About' section for a [JOB TITLE]. Focus on achievements and unique value proposition. Use appropriate emojis.",
+        "trending": true
+    },
+    {
+        "title": "🎼 Chord Progression Maker",
+        "category": "Creative Writing",
+        "desc": "Suggests chords for a specific mood.",
+        "prompt": "You are a Music Theorist. Suggest 3 unique chord progressions for a song with a [MOOD] vibe. Notate them in Roman numerals and provide the chords in the key of C Major.",
+        "trending": false
+    },
+    {
+        "title": "🎮 Game Mechanic Ideator",
+        "category": "Design",
+        "desc": "Brainstorms mechanics for video games.",
+        "prompt": "You are a Lead Game Designer. Brainstorm 3 core gameplay mechanics for a [GENRE] game involving [THEME]. Explain the 'Loop' (Action -> Reward -> Expansion) for each.",
+        "trending": false
+    },
+    {
+        "title": "📑 Legal Contract Reviewer",
+        "category": "Business",
+        "desc": "Highlights potential red flags in clauses.",
+        "prompt": "You are a Corporate Lawyer. Review the following contract clause for ambiguity or unfair terms. Highlight potential risks for the signatory. (Disclaimer: Not legal advice).",
+        "trending": true
+    },
+    {
+        "title": "🩺 Symptom Checker (Triage)",
+        "category": "Personal",
+        "desc": "Provides general medical context (non-diagnostic).",
+        "prompt": "You are a Triage Nurse. I have these symptoms: [SYMPTOMS]. Suggest potential causes and advise on the urgency of seeking professional medical care. State clearly this is not a diagnosis.",
+        "trending": false
+    },
+    {
+        "title": "🍲 Recipe Remix",
+        "category": "Personal",
+        "desc": "Modifies recipes for diets or ingredients.",
+        "prompt": "You are a Professional Chef. Modify this recipe to be [DIET TYPE] (e.g., Vegan/Keto) without losing flavor. Suggest specific ingredient swaps and adjustment to cooking times.",
+        "trending": false
+    },
+    {
+        "title": "🛠️ DIY Fix-It Guide",
+        "category": "Personal",
+        "desc": "Steps to repair common household items.",
+        "prompt": "You are a Handyman. Explain step-by-step how to fix [PROBLEM]. List necessary tools first. Include safety warnings.",
+        "trending": false
+    },
+    {
+        "title": "📢 Crisis Response Manager",
+        "category": "Communication",
+        "desc": "Drafts responses to public PR disasters.",
+        "prompt": "You are a PR Crisis Manager. Draft a public apology statement for [COMPANY] regarding [INCIDENT]. The tone must be remorseful, transparent, and action-oriented. Avoid defensive language.",
+        "trending": true
+    },
+    {
+        "title": "🌍 Cultural Etiquette Guide",
+        "category": "Travel",
+        "desc": "Advises on do's and don'ts for travelers.",
+        "prompt": "You are a Cultural Anthropologist. I am traveling to [COUNTRY] for business. List 5 critical etiquette rules I should know to avoid offending locals. Cover greetings, dining, and dress code.",
+        "trending": false
+    },
+    {
+        "title": "🔭 Sci-Fi World Builder",
+        "category": "Creative Writing",
+        "desc": "Generates lore for science fiction settings.",
+        "prompt": "You are a Sci-Fi Author. Create a planetary system for a story. Describe the main planet's geography, the dominant species' government type, and their primary technology level.",
+        "trending": false
+    },
+    {
+        "title": "📝 LaTeX Formatter",
+        "category": "Writing",
+        "desc": "Converts text/math into LaTeX code.",
+        "prompt": "You are an Academic Publisher. Convert the following mathematical equations and text description into proper LaTeX code. Ensure packages needed are listed.",
+        "trending": false
+    },
+    {
+        "title": "🏢 Real Estate Listing Writer",
+        "category": "Sales",
+        "desc": "Writes attractive descriptions for properties.",
+        "prompt": "You are a Luxury Real Estate Agent. Write a listing description for a [HOUSE TYPE] in [LOCATION]. Highlight the [FEATURE 1] and [FEATURE 2]. Use evocative language to sell the lifestyle.",
+        "trending": false
+    },
+    {
+        "title": "🧩 Logic Puzzle Creator",
+        "category": "Learning",
+        "desc": "Generates riddles and logic problems.",
+        "prompt": "You are a Riddler. Create a challenging logic puzzle involving [THEME]. Provide the puzzle first, then a spoiler-tagged solution with the step-by-step deduction.",
+        "trending": false
+    },
+    {
+        "title": "🕵️ Competitor Analysis",
+        "category": "Business",
+        "desc": "Analyzes market rivals.",
+        "prompt": "You are a Market Researcher. Conduct a competitor analysis for [MY COMPANY] vs [COMPETITOR]. Compare Pricing, Product Features, and Brand Perception. Output as a table.",
+        "trending": true
+    },
+    {
+        "title": "🐚 Shell Script Wizard",
+        "category": "Development",
+        "desc": "Writes Bash/Zsh scripts for automation.",
+        "prompt": "You are a Linux System Admin. Write a Bash script to [TASK]. Ensure it handles errors gracefully and logs output to a file. Add comments explaining flags used.",
+        "trending": false
+    },
+    {
+        "title": "🎨 CSS Animation Creator",
+        "category": "Development",
+        "desc": "Generates keyframe animations.",
+        "prompt": "You are a Frontend Designer. Create a CSS keyframe animation for a [ELEMENT] that does [ACTION]. Provide the HTML and CSS. Ensure it is performant (using transform/opacity).",
+        "trending": false
+    },
+    {
+        "title": "🐶 Pet Training Advisor",
+        "category": "Personal",
+        "desc": "Tips for training dogs/cats.",
+        "prompt": "You are an Animal Behaviorist. My dog has a problem with [BEHAVIOR]. Provide a positive reinforcement training plan to correct this. Explain why the behavior might be happening.",
+        "trending": false
+    },
+    {
+        "title": "🍷 Sommelier Pairing",
+        "category": "Personal",
+        "desc": "Suggests wine pairings for meals.",
+        "prompt": "You are a Master Sommelier. I am cooking [DISH]. Recommend 3 wine pairings (Low, Mid, and High budget). Explain why the flavor profiles work together.",
+        "trending": false
+    },
+    {
+        "title": "💰 SaaS Pricing Strategist",
+        "category": "Business",
+        "desc": "Suggests pricing tiers for software.",
+        "prompt": "You are a Product Strategy Consultant. Suggest a 3-tier pricing model (Basic, Pro, Enterprise) for a SaaS product that does [FUNCTION]. Define the feature gates for each tier.",
+        "trending": true
+    },
+    {
+        "title": "📵 Digital Detox Coach",
+        "category": "Productivity",
+        "desc": "Plans to reduce screen time.",
+        "prompt": "You are a Wellness Coach. Create a 7-day 'Digital Detox' plan to help me reduce phone addiction. Include daily restrictions and alternative analog activities.",
+        "trending": false
+    },
+    {
+        "title": "🔬 Science Fair Ideator",
+        "category": "Learning",
+        "desc": "Brainstorms projects for students.",
+        "prompt": "You are a Science Teacher. Suggest 3 unique science fair project ideas for a [GRADE LEVEL] student interested in [TOPIC]. Include the hypothesis and materials needed.",
+        "trending": false
+    },
+    {
+        "title": "🦄 Startup Name Generator",
+        "category": "Business",
+        "desc": "Creatively names new companies.",
+        "prompt": "You are a Brand Strategist. Generate 10 catchy names for a startup in the [INDUSTRY] space. Include a mix of compound words, abstract names, and misspelled words (like Lyft).",
+        "trending": false
+    },
+    {
+        "title": "🎬 Movie Recommender",
+        "category": "Personal",
+        "desc": "Suggests films based on mood/taste.",
+        "prompt": "You are a Film Critic. I liked [MOVIE 1] and [MOVIE 2]. Suggest 5 hidden gems (not blockbusters) that have a similar tone or theme. Include a one-sentence synopsis for each.",
+        "trending": false
+    },
+    {
+        "title": "🧬 Biology Concept Mapper",
+        "category": "Learning",
+        "desc": "Explains biological processes.",
+        "prompt": "You are a Biology Professor. Explain the process of [PROCESS, e.g., Photosynthesis] step-by-step. Focus on the inputs and outputs of each stage.",
+        "trending": false
+    },
+    {
+        "title": "📜 Historical Analogy",
+        "category": "Learning",
+        "desc": "Compares current events to history.",
+        "prompt": "You are a Historian. Compare [CURRENT EVENT] to a similar event in history. Highlight the parallels in cause and effect, and the differences in context.",
+        "trending": true
+    },
+    {
+        "title": "🤖 Arduino Prototyper",
+        "category": "Development",
+        "desc": "Writes code for microcontroller projects.",
+        "prompt": "You are an Embedded Systems Engineer. Write the Arduino C++ code to control [COMPONENTS]. Include the wiring logic in comments (e.g., 'Connect LED to Pin 13').",
+        "trending": false
+    },
+    {
+        "title": "🖋️ Calligraphy Practice",
+        "category": "Design",
+        "desc": "Generates practice sentences for lettering.",
+        "prompt": "You are a Calligraphy Master. Generate 10 pangrams (sentences with every letter) for lettering practice. Vary the length and tone (some funny, some poetic).",
+        "trending": false
+    },
+    {
+        "title": "🃏 Tarot Reader",
+        "category": "Personal",
+        "desc": "Simulates a tarot card reading.",
+        "prompt": "You are a Mystic. Draw 3 random tarot cards for a 'Past, Present, Future' spread regarding [QUESTION]. Interpret the meaning of each card and the synthesis of the three.",
+        "trending": false
+    },
+    {
+        "title": "📈 Stock Market Tutor",
+        "category": "Data",
+        "desc": "Explains financial charts and terms.",
+        "prompt": "You are a Financial Analyst. Explain the concept of [TERM, e.g., Short Selling] to a beginner. Use a lemonade stand analogy to make it understandable.",
+        "trending": true
+    },
+    {
+        "title": "🔨 Rust Ownership Explain",
+        "category": "Development",
+        "desc": "Explains Rust language memory safety.",
+        "prompt": "You are a Rust Ace. Explain why the following code causes a borrow checker error. Then, provide the fixed code using cloning or references.",
+        "trending": false
+    },
+    {
+        "title": "🍎 Teacher Lesson Plan",
+        "category": "Learning",
+        "desc": "Creates a 45-min classroom plan.",
+        "prompt": "You are a Pedagogy Expert. Create a lesson plan for a 45-minute class on [TOPIC] for [AGE GROUP]. Include Learning Objectives, Direct Instruction, Guided Practice, and Assessment.",
+        "trending": false
+    },
+    {
+        "title": "🧙 D&D Dungeon Master",
+        "category": "Creative Writing",
+        "desc": "Generates encounters for RPGs.",
+        "prompt": "You are a Dungeon Master. Create a combat encounter for a party of level [LEVEL] adventurers. Describe the setting, the monsters, and a unique environmental hazard.",
+        "trending": true
+    },
+    {
+        "title": "👔 Career Pivot Advisor",
+        "category": "HR",
+        "desc": "Advises on switching industries.",
+        "prompt": "You are a Career Coach. I am currently a [CURRENT ROLE] wanting to become a [TARGET ROLE]. Identify transferable skills I likely have and list 3 skills I need to learn immediately.",
+        "trending": true
+    },
+    {
+        "title": "🧹 Decluttering Expert",
+        "category": "Personal",
+        "desc": "Strategies to organize a home.",
+        "prompt": "You are a Professional Organizer (Marie Kondo style). Give me a checklist to declutter my [ROOM]. Provide criteria for what to keep, donate, or trash.",
+        "trending": false
+    },
+    {
+        "title": "💻 CLI Tool Man Page",
+        "category": "Development",
+        "desc": "Explains command line flags.",
+        "prompt": "You are a Linux Expert. Explain the most common flags used with the [COMMAND] command. Give a practical example for each flag.",
+        "trending": false
+    },
+    {
+        "title": "📧 Networking Outreach",
+        "category": "Communication",
+        "desc": "Writes emails to connect with mentors.",
+        "prompt": "You are a Networking Expert. Write a message to a senior professional on LinkedIn asking for a 15-minute virtual coffee chat. Be respectful of their time and state a clear reason for connecting.",
+        "trending": false
+    },
+    {
+        "title": "🥘 Leftover Chef",
+        "category": "Personal",
+        "desc": "Suggests meals from available ingredients.",
+        "prompt": "You are a Creative Chef. I have [INGREDIENT LIST] in my fridge. Suggest 2 distinct meal ideas I can cook using primarily these ingredients. Tell me what basic pantry staples I might need to add.",
+        "trending": false
+    },
+    {
+        "title": "📊 KPI Dashboard Planner",
+        "category": "Business",
+        "desc": "Defines metrics for success.",
+        "prompt": "You are a Business Operations Manager. Define 5 Key Performance Indicators (KPIs) for a [TEAM TYPE, e.g., Customer Support] team. Explain how to measure each and what 'Good' looks like.",
+        "trending": false
+    },
+    {
+        "title": "🐛 Debugging Duck",
+        "category": "Development",
+        "desc": "Listens to code logic to find errors.",
+        "prompt": "You are a Rubber Duck. I will explain my code logic to you line by line. Stop me if you hear a logical inconsistency or a potential flaw in my reasoning. Here is the logic: [EXPLANATION].",
+        "trending": true
+    },
+    {
+        "title": "📝 Essay Structure",
+        "category": "Writing",
+        "desc": "Outlines an academic essay.",
+        "prompt": "You are a University Professor. Create an outline for an argumentative essay on [TOPIC]. Include a Thesis Statement, 3 Body Paragraphs (Claim + Evidence), and a Conclusion.",
+        "trending": false
+    },
+    {
+        "title": "🌍 Language Slang Guide",
+        "category": "Learning",
+        "desc": "Teaches colloquialisms.",
+        "prompt": "You are a Local Guide. Teach me 10 common slang words or phrases used in [REGION/LANGUAGE] that aren't in textbooks. Explain the context and how to use them naturally.",
+        "trending": true
+    },
+    {
+        "title": "📱 App Store Description",
+        "category": "Marketing",
+        "desc": "Writes copy for app stores.",
+        "prompt": "You are an App Store Optimization (ASO) Expert. Write a short description (promo text) and a full description for an app that [FUNCTION]. Focus on keywords and value propositions.",
+        "trending": false
+    },
+    {
+        "title": "🕯️ Mindfulness Guide",
+        "category": "Personal",
+        "desc": "Scripts a meditation session.",
+        "prompt": "You are a Meditation Teacher. Write a script for a 5-minute guided mindfulness session focused on [FOCUS, e.g., Anxiety relief]. Include breathing cues.",
+        "trending": false
+    },
+    {
+        "title": "🛠️ Terraform Spinner",
+        "category": "Development",
+        "desc": "Writes Infrastructure as Code.",
+        "prompt": "You are a Cloud Architect. Write a Terraform configuration to provision an AWS EC2 instance with a Security Group allowing SSH and HTTP. Use variables for the region and instance type.",
+        "trending": false
+    },
+    
+    {
+        "title": "🕷️ Web Scraper Script",
+        "category": "Development",
+        "desc": "Writes a script to extract data from a website.",
+        "prompt": "You are a Python Developer. Write a script using Beautiful Soup and Requests to scrape the titles and prices from a fictional e-commerce site. Handle pagination and save the data to a CSV.",
+        "trending": true
+    },
+    {
+        "title": "🎨 UX Microcopy Writer",
+        "category": "Design",
+        "desc": "Writes short, clear text for UI elements.",
+        "prompt": "You are a UX Writer. Write 3 options for an error message when a user's credit card is declined. The tone should be helpful, not alarming. Keep it under 40 characters.",
+        "trending": false
+    },
+    {
+        "title": "🗄️ Database Schema Architect",
+        "category": "Data",
+        "desc": "Designs a relational database structure.",
+        "prompt": "You are a Database Architect. Design a normalized schema (3NF) for a library management system. Include tables for Books, Members, Loans, and Authors. Define primary and foreign keys.",
+        "trending": true
+    },
+    {
+        "title": "🤖 ML Model Explainer",
+        "category": "Data",
+        "desc": "Explains how a machine learning model works.",
+        "prompt": "You are a Data Scientist. Explain how a Random Forest algorithm works to a non-technical stakeholder. Use a 'decision tree' analogy without getting into the math.",
+        "trending": true
+    },
+    {
+        "title": "🧹 Code Refactorer",
+        "category": "Development",
+        "desc": "Improves code readability and efficiency.",
+        "prompt": "You are a Senior Engineer. Refactor the following legacy code to adhere to 'Clean Code' principles. Rename variables for clarity, extract methods, and remove redundancy.",
+        "trending": true
+    },
+    {
+        "title": "🔄 Code Translator",
+        "category": "Development",
+        "desc": "Converts code from one language to another.",
+        "prompt": "You are a Polyglot Programmer. Convert the provided Java function into idiomatic Python. Ensure you use Pythonic features like list comprehensions where applicable.",
+        "trending": false
+    },
+    {
+        "title": "☸️ Kubernetes YAML Writer",
+        "category": "Development",
+        "desc": "Generates K8s configuration files.",
+        "prompt": "You are a DevOps Engineer. Write a Kubernetes Deployment YAML for a Node.js application. Include 3 replicas, resource limits (CPU/Memory), and a liveness probe.",
+        "trending": false
+    },
+    {
+        "title": "⚡ SQL Query Optimizer",
+        "category": "Data",
+        "desc": "Speeds up slow database queries.",
+        "prompt": "You are a Database Performance Tuner. Analyze the provided SQL query. Suggest indexes that should be added and rewrite the query to avoid full table scans.",
+        "trending": true
+    },
+    {
+        "title": "📊 Excel Dashboard Planner",
+        "category": "Data",
+        "desc": "Outlines a visual report in Excel.",
+        "prompt": "You are a Data Analyst. Outline a structure for a Sales Executive Dashboard in Excel. List the 5 most important charts to include and the data source columns required for each.",
+        "trending": false
+    },
+    {
+        "title": "📰 Newsletter Generator",
+        "category": "Marketing",
+        "desc": "Writes a weekly email update.",
+        "prompt": "You are a Content Marketer. Write a weekly newsletter intro for a tech startup. Summarize 3 industry trends. Keep the tone conversational and include a 'Read More' link placeholder.",
+        "trending": true
+    },
+    {
+        "title": "🎙️ Podcast Interviewer",
+        "category": "Content",
+        "desc": "Prepares questions for a guest.",
+        "prompt": "You are a Podcast Host. Prepare 10 questions for an interview with a [ROLE/EXPERT]. Start with their background, move to their specific work, and end with future predictions.",
+        "trending": false
+    },
+    {
+        "title": "🛡️ Sales Objection Handler",
+        "category": "Sales",
+        "desc": "Scripts responses to hesitant clients.",
+        "prompt": "You are a Sales Trainer. Provide 3 different scripts to handle the objection: 'It's too expensive.' focus on Value, ROI, and Payment Terms respectively.",
+        "trending": true
+    },
+    {
+        "title": "🛋️ Interior Design Consultant",
+        "category": "Personal",
+        "desc": "Suggests decor styles.",
+        "prompt": "You are an Interior Designer. Suggest a color palette and furniture style for a small living room with low natural light. The goal is to make it feel cozy but spacious.",
+        "trending": false
+    },
+    {
+        "title": "👗 Fashion Stylist",
+        "category": "Personal",
+        "desc": "Recommends outfits for events.",
+        "prompt": "You are a Personal Stylist. Suggest an outfit for a [EVENT TYPE] in [SEASON]. Include accessories and shoe choices. Keep the style [STYLE ADJECTIVE, e.g., Minimalist].",
+        "trending": false
+    },
+    {
+        "title": "💍 Wedding Vow Writer",
+        "category": "Personal",
+        "desc": "Drafts emotional vows.",
+        "prompt": "You are a Romance Writer. Write wedding vows that are heartfelt but not cheesy. Mention shared love for [INTEREST] and promise to support them in [GOAL].",
+        "trending": false
+    },
+    {
+        "title": "🧳 Travel Packing List",
+        "category": "Personal",
+        "desc": "Generates a checklist for trips.",
+        "prompt": "You are a Travel Guide. Create a packing list for a 1-week trip to [DESTINATION] in [MONTH]. Separate items into Clothing, Toiletries, Electronics, and Documents.",
+        "trending": false
+    },
+    {
+        "title": "💰 Grant Proposal Writer",
+        "category": "Business",
+        "desc": "Drafts funding requests.",
+        "prompt": "You are a Non-Profit Consultant. Write the 'Statement of Need' section for a grant proposal focused on [ISSUE]. Use statistics and emotional appeals to justify the funding.",
+        "trending": false
+    },
+    {
+        "title": "🎓 Research Paper Abstract",
+        "category": "Academic",
+        "desc": "Summarizes a study.",
+        "prompt": "You are an Academic Editor. Write a 200-word abstract for a research paper about [TOPIC]. Include the Background, Methods, Results, and Conclusion.",
+        "trending": false
+    },
+    {
+        "title": "🗣️ Nuance Translator",
+        "category": "Language",
+        "desc": "Translates meaning, not just words.",
+        "prompt": "You are a translator. Translate the idiom '[IDIOM]' from [SOURCE LANG] to [TARGET LANG]. Explain the cultural context and provide an equivalent idiom in the target language if one exists.",
+        "trending": false
+    },
+    {
+        "title": "✍️ Creative Dialogue",
+        "category": "Creative Writing",
+        "desc": "Writes conversation between characters.",
+        "prompt": "You are a Screenwriter. Write a dialogue scene between two characters who are secretly in love but arguing about who should pay the dinner bill. Subtext is key.",
+        "trending": true
+    },
+    {
+        "title": "📧 Subject Line Tester",
+        "category": "Marketing",
+        "desc": "Generates high-open-rate subject lines.",
+        "prompt": "You are an Email Marketing Specialist. Generate 10 subject lines for a Black Friday sale. Use psychological triggers like Scarcity, Curiosity, and Urgency.",
+        "trending": true
+    },
+    {
+        "title": "📄 Landing Page Copy",
+        "category": "Marketing",
+        "desc": "Writes persuasive web copy.",
+        "prompt": "You are a Conversion Copywriter. Write the Headline, Subheadline, and CTA button text for a landing page selling [PRODUCT]. Focus on the primary pain point solved.",
+        "trending": true
+    },
+    {
+        "title": "📢 Facebook Ad Copy",
+        "category": "Marketing",
+        "desc": "Writes social ads.",
+        "prompt": "You are a Paid Media Specialist. Write the Primary Text and Headline for a Facebook Ad targeting [AUDIENCE]. The goal is lead generation. Use emojis.",
+        "trending": false
+    },
+    {
+        "title": "🤝 Influencer Outreach",
+        "category": "Marketing",
+        "desc": "DMs for collaboration.",
+        "prompt": "You are an Influencer Manager. Write a DM to an Instagram creator asking for a collaboration. Compliment a specific recent post of theirs. Be brief and professional.",
+        "trending": false
+    },
+    {
+        "title": "🎉 Event Planner",
+        "category": "Personal",
+        "desc": "Plans parties and corporate events.",
+        "prompt": "You are an Event Coordinator. Plan a launch party for a new startup. Suggest a Theme, Catering Menu (Finger foods), and a unique interactive activity for guests.",
+        "trending": false
+    },
+    {
+        "title": "🧠 Trivia Generator",
+        "category": "Fun",
+        "desc": "Creates quiz questions.",
+        "prompt": "You are a Quiz Master. Generate 5 trivia questions about [TOPIC]. Include the correct answer and a 'Did You Know?' fact for each.",
+        "trending": false
+    },
+    {
+        "title": "🤔 Philosophy Debate",
+        "category": "Learning",
+        "desc": "Discusses ethical dilemmas.",
+        "prompt": "You are an Ethicist. Discuss the 'Trolley Problem' from the perspective of Utilitarianism vs. Deontology. Explain what each school of thought would likely choose.",
+        "trending": false
+    },
+    {
+        "title": "⏳ Alt-History Scenarios",
+        "category": "Learning",
+        "desc": "Speculates on historical changes.",
+        "prompt": "You are a Speculative Historian. What if [EVENT] never happened? Describe the potential geopolitical ripple effects over the following 50 years.",
+        "trending": false
+    },
+    {
+        "title": "🧪 Science Experiment",
+        "category": "Learning",
+        "desc": "Safe home experiments.",
+        "prompt": "You are a Chemistry Teacher. Describe a safe kitchen science experiment to demonstrate [CONCEPT, e.g., Density]. List ingredients and explain the reaction.",
+        "trending": false
+    },
+    {
+        "title": "📢 Brand Voice Generator",
+        "category": "Business",
+        "desc": "Defines a company's tone.",
+        "prompt": "You are a Brand Strategist. Define the Brand Voice for a company that sells [PRODUCT]. Use 3 adjectives (e.g., Witty, rebellious, concise) and provide example copy for a tweet.",
+        "trending": true
+    },
+    {
+        "title": "🎧 Customer Support Script",
+        "category": "Business",
+        "desc": "Handles angry customers.",
+        "prompt": "You are a Customer Success Manager. Write a script to de-escalate a call with a furious customer whose order was lost. Use the LEAF method (Listen, Empathize, Apologize, Fix).",
+        "trending": false
+    },
+    {
+        "title": "🕊️ Conflict Resolution",
+        "category": "HR",
+        "desc": "Mediates workplace disputes.",
+        "prompt": "You are an HR Mediator. Two employees are arguing about [ISSUE]. Propose a 3-step mediation process to resolve the conflict and restore collaboration.",
+        "trending": false
+    },
+    {
+        "title": "🏗️ Team Building Activity",
+        "category": "HR",
+        "desc": "Suggests morale boosters.",
+        "prompt": "You are a Culture Manager. Suggest 3 remote team-building activities that are not awkward. Focus on building genuine connection rather than forced fun.",
+        "trending": false
+    },
+    {
+        "title": "♿ Accessibility Audit",
+        "category": "Design",
+        "desc": "Checks for WCAG compliance.",
+        "prompt": "You are an Accessibility Expert. Review the described UI component. List potential accessibility barriers for users with visual impairments and suggest ARIA labels.",
+        "trending": true
+    },
+    {
+        "title": "🔡 Typography Pairings",
+        "category": "Design",
+        "desc": "Suggests font combinations.",
+        "prompt": "You are a Type Designer. Suggest a Header font and a Body font pairing for a [INDUSTRY] website. Explain why they complement each other.",
+        "trending": false
+    },
+    {
+        "title": "🎨 Color Psychology",
+        "category": "Design",
+        "desc": "Explains emotional impact of color.",
+        "prompt": "You are a Color Theorist. Explain the psychological impact of using [COLOR] in a marketing campaign. What emotions does it evoke and what industries commonly use it?",
+        "trending": false
+    },
+    {
+        "title": "📄 Resume Bullet Points",
+        "category": "Career",
+        "desc": "Optimizes CV achievements.",
+        "prompt": "You are a Resume Writer. Rewrite this job duty into a results-oriented bullet point using the 'Action Verb + Task + Result' formula. Add metrics where possible.",
+        "trending": true
+    },
+    {
+        "title": "💬 LinkedIn Commenter",
+        "category": "Social Media",
+        "desc": "Writes engaging replies.",
+        "prompt": "You are a Networking Expert. Write a thoughtful, value-add comment on a LinkedIn post about [TOPIC]. Disagree politely or add a new perspective to the original post.",
+        "trending": false
+    },
+    {
+        "title": "🐦 Twitter Bio Architect",
+        "category": "Social Media",
+        "desc": "Optimizes profile bios.",
+        "prompt": "You are a Social Media Consultant. Write 3 Twitter bio options for a [ROLE]. Include 1 personal detail and 1 professional flex. Keep it under 160 characters.",
+        "trending": false
+    },
+    {
+        "title": "🍸 Cocktail Maker",
+        "category": "Personal",
+        "desc": "Creates custom drink recipes.",
+        "prompt": "You are a Mixologist. Create a custom cocktail recipe based on these preferences: [SPIRIT], [FLAVOR PROFILE]. Give it a creative name.",
+        "trending": false
+    },
+    {
+        "title": "📚 Book Recommender",
+        "category": "Personal",
+        "desc": "Finds the next great read.",
+        "prompt": "You are a Librarian. I just finished [BOOK TITLE] and loved the [THEME]. Suggest 3 similar books. Include a mix of fiction and non-fiction.",
+        "trending": true
+    },
+    {
+        "title": "🎁 Gift Note Writer",
+        "category": "Personal",
+        "desc": "Writes thoughtful cards.",
+        "prompt": "You are a Poet. Write a sincere note to accompany a gift for a [RELATIONSHIP]. Express gratitude for their presence in your life.",
+        "trending": false
+    },
+    {
+        "title": "🧩 Algorithm Tutor",
+        "category": "Development",
+        "desc": "Explains CS algorithms.",
+        "prompt": "You are a Computer Science Professor. Explain the 'Binary Search' algorithm. Visualize the steps with a numbered list. Analyze its Big O time complexity.",
+        "trending": false
+    },
+    {
+        "title": "🔧 Ansible Playbook Writer",
+        "category": "Development",
+        "desc": "Automates server configuration.",
+        "prompt": "You are a SysAdmin. Write an Ansible Playbook to install Nginx and start the service on a group of Ubuntu servers. Ensure it is idempotent.",
+        "trending": false
+    },
+    {
+        "title": "⚛️ Vue Component Creator",
+        "category": "Development",
+        "desc": "Writes Vue.js single file components.",
+        "prompt": "You are a Frontend Dev. Create a Vue.js 3 component (Composition API) for a countdown timer. Include the template, script, and scoped styles.",
+        "trending": true
+    },
+    {
+        "title": "📊 Google Ads Keywords",
+        "category": "Marketing",
+        "desc": "Generates PPC keyword lists.",
+        "prompt": "You are a SEM Specialist. Generate a list of 10 negative keywords for a campaign selling [PRODUCT] to ensure we don't pay for irrelevant clicks.",
+        "trending": false
+    },
+    {
+        "title": "📝 Meeting Agenda Setter",
+        "category": "Productivity",
+        "desc": "Structures productive meetings.",
+        "prompt": "You are a Project Manager. Create an agenda for a 30-minute stand-up meeting. Allocate time slots for each section to ensure the meeting ends on time.",
+        "trending": false
+    },
+    {
+        "title": "🧱 User Flow Designer",
+        "category": "Design",
+        "desc": "Maps out user journeys.",
+        "prompt": "You are a UX Designer. Describe the user flow for a customer resetting their password on a mobile banking app. Include success and error paths.",
+        "trending": false
+    },
+    {
+        "title": "🗣️ Employee Feedback",
+        "category": "HR",
+        "desc": "Writes constructive reviews.",
+        "prompt": "You are a Manager. Write a constructive feedback paragraph for an employee who is great at technical tasks but struggles with communication. Use the 'Start, Stop, Continue' framework.",
+        "trending": false
+    },
+    {
+        "title": "📄 White Paper Outliner",
+        "category": "Marketing",
+        "desc": "Structures technical reports.",
+        "prompt": "You are a Technical Marketer. Create a table of contents for a white paper on [TOPIC]. The goal is to establish thought leadership and generate leads.",
+        "trending": false
     }
+    ,
+    {
+        "title": "🦀 Rust Macro Wizard",
+        "category": "Development",
+        "desc": "Writes complex Rust macros.",
+        "prompt": "You are a Rust Expert. Write a declarative macro (`macro_rules!`) that takes a vector of expressions and prints them. Explain the syntax matchers used.",
+        "trending": true
+    },
+    {
+        "title": "🎮 Unity C# Scripter",
+        "category": "Development",
+        "desc": "Creates scripts for game objects.",
+        "prompt": "You are a Game Developer. Write a C# script for Unity 3D that controls a player character's movement using the new Input System. Include jumping logic and ground detection.",
+        "trending": false
+    },
+    {
+        "title": "🔻 Sales Funnel Architect",
+        "category": "Marketing",
+        "desc": "Designs a customer acquisition journey.",
+        "prompt": "You are a Digital Strategist. Map out a 4-stage sales funnel (Awareness, Consideration, Decision, Retention) for a high-ticket coaching program. Suggest content types for each stage.",
+        "trending": true
+    },
+    {
+        "title": "👶 Parenting Advisor",
+        "category": "Personal",
+        "desc": "Offers balanced parenting advice.",
+        "prompt": "You are a Child Psychologist. My toddler is having tantrums at bedtime. Suggest 3 gentle parenting techniques to establish a calm night routine.",
+        "trending": false
+    },
+    {
+        "title": "🏛️ Stoic Philosopher",
+        "category": "Learning",
+        "desc": "Applies ancient wisdom to modern problems.",
+        "prompt": "You are Marcus Aurelius. I am stressed about a deadline I cannot control. Provide a Stoic perspective on how to handle this anxiety using the dichotomy of control.",
+        "trending": true
+    },
+    {
+        "title": "📉 Excel Pivot Master",
+        "category": "Data",
+        "desc": "Sets up pivot tables and charts.",
+        "prompt": "You are an Excel Expert. Explain how to create a Pivot Table from a sales dataset to show 'Total Revenue by Region'. Describe which fields go into Rows, Columns, and Values.",
+        "trending": false
+    },
+    {
+        "title": "🤝 LinkedIn Recommendation",
+        "category": "Career",
+        "desc": "Writes professional endorsements.",
+        "prompt": "You are a Senior Manager. Write a LinkedIn recommendation for a colleague who is a [ROLE]. Highlight their leadership skills and ability to deliver under pressure.",
+        "trending": false
+    },
+    {
+        "title": "🏷️ SEO Meta Tag Writer",
+        "category": "Marketing",
+        "desc": "Optimizes HTML tags for search.",
+        "prompt": "You are an SEO Specialist. Write the Title Tag and Meta Description for a webpage about [TOPIC]. Ensure the title is under 60 chars and description under 160 chars. Include the keyword.",
+        "trending": false
+    },
+    {
+        "title": "📝 JSDoc Generator",
+        "category": "Development",
+        "desc": "Adds documentation comments to JS code.",
+        "prompt": "You are a JavaScript Developer. Add JSDoc comments to the provided function. Include `@param`, `@returns`, and an `@example` usage case.",
+        "trending": false
+    },
+    {
+        "title": "🧠 Cognitive Bias Checker",
+        "category": "Learning",
+        "desc": "Identifies flaws in reasoning.",
+        "prompt": "You are a Critical Thinking Coach. Analyze this argument: '[ARGUMENT]'. Identify which cognitive biases (e.g., Confirmation Bias, Sunk Cost) might be influencing this line of thinking.",
+        "trending": true
+    },
+    {
+        "title": "🤫 NDA Drafter",
+        "category": "Business",
+        "desc": "Drafts Non-Disclosure Agreements.",
+        "prompt": "You are a Legal Assistant. Draft a standard mutual Non-Disclosure Agreement (NDA) between two parties. Include clauses for 'Confidential Information' definition and 'Term of Agreement'.",
+        "trending": true
+    },
+    {
+        "title": "🚀 Startup Pitch Deck",
+        "category": "Business",
+        "desc": "Outlines a slide deck for investors.",
+        "prompt": "You are a Venture Capitalist. Outline the 10 essential slides for a Seed Round pitch deck. Include 'Problem', 'Solution', 'Market Size', and 'Traction'.",
+        "trending": true
+    },
+    {
+        "title": "🎤 Rap Lyricist",
+        "category": "Creative Writing",
+        "desc": "Writes bars with rhyme schemes.",
+        "prompt": "You are a Hip Hop Artist. Write a 16-bar verse about [TOPIC]. Use internal rhymes and multi-syllabic rhyme schemes. Mark the flow pattern.",
+        "trending": false
+    },
+    {
+        "title": "🧘 Yoga Sequence Builder",
+        "category": "Personal",
+        "desc": "Creates a flow for specific needs.",
+        "prompt": "You are a Yoga Instructor. Create a 20-minute Vinyasa flow sequence focused on opening tight hips. List the poses in order, including the Sanskrit names.",
+        "trending": false
+    },
+    {
+        "title": "🐼 Python Pandas Merge",
+        "category": "Data",
+        "desc": "Joins dataframes correctly.",
+        "prompt": "You are a Data Analyst. Write the Python Pandas code to perform a 'Left Join' on two dataframes: `df_users` and `df_orders` on the key `user_id`. Handle missing values.",
+        "trending": false
+    },
+    {
+        "title": "🔄 CI/CD Pipeline Config",
+        "category": "Development",
+        "desc": "Sets up automated deployment.",
+        "prompt": "You are a DevOps Engineer. Write a GitHub Actions workflow file (`.yml`) to build and test a Node.js application whenever code is pushed to the `main` branch.",
+        "trending": false
+    },
+    {
+        "title": "🔐 AWS IAM Policy Writer",
+        "category": "Development",
+        "desc": "Secures cloud resources.",
+        "prompt": "You are a Cloud Security Engineer. Write a JSON IAM Policy that grants Read-Only access to S3 buckets but allows full access to a specific bucket named 'my-secure-bucket'.",
+        "trending": false
+    },
+    {
+        "title": "🎨 Figma Plugin Idea",
+        "category": "Design",
+        "desc": "Brainstorms tools for designers.",
+        "prompt": "You are a Product Designer. Brainstorm 3 ideas for a Figma plugin that would solve a common pain point in the design-to-development handoff process.",
+        "trending": false
+    },
+    {
+        "title": "🚫 Passive Voice Detector",
+        "category": "Writing",
+        "desc": "Strengthens writing style.",
+        "prompt": "You are a Book Editor. Rewrite the following paragraph to remove passive voice. Make the subjects of the sentences perform the action. Keep the tone punchy.",
+        "trending": true
+    },
+    {
+        "title": "💎 USP Generator",
+        "category": "Marketing",
+        "desc": "Defines Unique Selling Propositions.",
+        "prompt": "You are a Brand Strategist. Identify the Unique Selling Proposition (USP) for a [PRODUCT TYPE] that differentiates it from competitors. Focus on emotional benefit.",
+        "trending": false
+    },
+    {
+        "title": "🎣 Viral Hook Writer",
+        "category": "Social Media",
+        "desc": "Creates scroll-stopping intros.",
+        "prompt": "You are a TikTok Scriptwriter. Write 3 'Hooks' (first 3 seconds) for a video about [TOPIC]. Use patterns like 'Stop doing this' or 'The secret nobody tells you'.",
+        "trending": true
+    },
+    {
+        "title": "📋 Onboarding Checklist",
+        "category": "HR",
+        "desc": "Welcomes new hires efficiently.",
+        "prompt": "You are an HR Manager. Create a Day 1 Onboarding Checklist for a new remote Software Engineer. Include IT setup, team intros, and documentation review.",
+        "trending": false
+    },
+    {
+        "title": "🧠 Feynman Technique",
+        "category": "Learning",
+        "desc": "Deepens understanding by teaching.",
+        "prompt": "You are a Physics Tutor. Use the Feynman Technique to explain Quantum Entanglement. Pretend you are teaching it to a 12-year-old. Identify gaps in the explanation.",
+        "trending": true
+    },
+    {
+        "title": "📊 R ggplot2 Wizard",
+        "category": "Data",
+        "desc": "Creates statistical graphics in R.",
+        "prompt": "You are a Statistician. Write R code using `ggplot2` to create a scatter plot with a linear regression line. Customize the theme to be minimal.",
+        "trending": false
+    },
+    {
+        "title": "🐹 Go Goroutines",
+        "category": "Development",
+        "desc": "Writes concurrent Go code.",
+        "prompt": "You are a Golang Developer. Write a function that uses Goroutines and Channels to fetch data from 3 URLs concurrently and aggregates the results.",
+        "trending": false
+    },
+    {
+        "title": "✍️ Metaphor Maker",
+        "category": "Creative Writing",
+        "desc": "Creates vivid comparisons.",
+        "prompt": "You are a Poet. Create a unique metaphor to describe the feeling of [EMOTION, e.g., loneliness] without using the word itself. Avoid clichés.",
+        "trending": false
+    },
+    {
+        "title": "🌍 PESTLE Analysis",
+        "category": "Business",
+        "desc": "Analyzes external business factors.",
+        "prompt": "You are a Business Consultant. Conduct a PESTLE analysis (Political, Economic, Social, Tech, Legal, Environmental) for the Electric Vehicle industry.",
+        "trending": false
+    },
+    {
+        "title": "🤝 Sales Closing Technique",
+        "category": "Sales",
+        "desc": "Seals the deal.",
+        "prompt": "You are a Sales Director. Write a script using the 'Assumptive Close' technique for a client who is hesitant about signing the contract today.",
+        "trending": true
+    },
+    {
+        "title": "💎 Hidden Gem Finder",
+        "category": "Travel",
+        "desc": "Finds non-touristy spots.",
+        "prompt": "You are a Local Guide. Recommend 3 'hidden gem' restaurants in [CITY] that are loved by locals but ignored by tourists. Mention their signature dish.",
+        "trending": false
+    },
+    {
+        "title": "📘 TypeScript Types",
+        "category": "Development",
+        "desc": "Defines complex TS interfaces.",
+        "prompt": "You are a Frontend Architect. Define a TypeScript Interface for a 'User' object that includes nested properties and an optional field. Use a Union Type for the user status.",
+        "trending": false
+    },
+    {
+        "title": "👁️ Accessibility Contrast",
+        "category": "Design",
+        "desc": "Checks color ratios.",
+        "prompt": "You are a UI Designer. I have a background color of #FFFFFF and text color of #AAAAAA. Is this WCAG AA compliant? If not, suggest a darker shade of gray that passes.",
+        "trending": false
+    },
+    {
+        "title": "🗳️ LinkedIn Poll Creator",
+        "category": "Social Media",
+        "desc": "Engages network with questions.",
+        "prompt": "You are a Social Media Manager. Create a LinkedIn Poll about [INDUSTRY TREND]. Provide the question and 4 distinct answer options that will spark debate in the comments.",
+        "trending": false
+    },
+    {
+        "title": "📰 Headline Analyzer",
+        "category": "Marketing",
+        "desc": "Scores headlines for clickability.",
+        "prompt": "You are a Copy Editor. Analyze these 3 headlines. Rate them 1-10 based on intrigue, clarity, and SEO potential. Suggest a superior 4th option.",
+        "trending": true
+    },
+    {
+        "title": "📓 Journal Prompts",
+        "category": "Personal",
+        "desc": "Promotes self-reflection.",
+        "prompt": "You are a Life Coach. Give me 3 journaling prompts to help me figure out my core values. The prompts should dig deep into my past choices.",
+        "trending": false
+    },
+    {
+        "title": "🪟 SQL Window Functions",
+        "category": "Data",
+        "desc": "Calculates running totals/ranks.",
+        "prompt": "You are a SQL Expert. Write a query using `ROW_NUMBER()` and `PARTITION BY` to find the top 3 highest-paid employees in each department.",
+        "trending": true
+    },
+    {
+        "title": "🕸️ GraphQL Schema",
+        "category": "Development",
+        "desc": "Designs API schemas.",
+        "prompt": "You are a Backend Developer. Design a GraphQL schema type definition for a 'Blog Post' which has an Author, Comments, and a list of Tags.",
+        "trending": false
+    },
+    {
+        "title": "🎭 Brand Archetypes",
+        "category": "Marketing",
+        "desc": "Identifies brand personality.",
+        "prompt": "You are a Brand Manager. Determine the Brand Archetype (e.g., Hero, Outlaw, Sage) for [COMPANY]. Explain why this archetype fits their marketing messaging.",
+        "trending": false
+    },
+    {
+        "title": "🌈 Diversity Statement",
+        "category": "HR",
+        "desc": "Writes inclusive company policy.",
+        "prompt": "You are a DEI Officer. Draft a paragraph for the company careers page that highlights our commitment to diversity, equity, and inclusion. Tone: Authentic and actionable.",
+        "trending": false
+    },
+    {
+        "title": "🏰 Memory Palace",
+        "category": "Learning",
+        "desc": "Memorizes lists easily.",
+        "prompt": "You are a Mnemonist. Help me memorize this list of items: [LIST]. Create a vivid story using the 'Memory Palace' technique to link them together.",
+        "trending": false
+    },
+    {
+        "title": "🗺️ Fantasy World Builder",
+        "category": "Creative Writing",
+        "desc": "Creates maps and lore.",
+        "prompt": "You are a Fantasy Author. Describe the magic system of a fictional world where magic is powered by [RESOURCE]. Explain the cost of using magic.",
+        "trending": true
+    },
+    {
+        "title": "⚙️ Nginx Configurator",
+        "category": "Development",
+        "desc": "Sets up web servers.",
+        "prompt": "You are a SysAdmin. Write an Nginx server block configuration to serve a static React app. Include gzip compression and cache headers for assets.",
+        "trending": false
+    },
+    {
+        "title": "💸 Zero-Based Budget",
+        "category": "Personal",
+        "desc": "Allocates every dollar.",
+        "prompt": "You are a Financial Planner. Explain the concept of Zero-Based Budgeting. Then, create a template category list for a person earning $4000/month.",
+        "trending": true
+    },
+    {
+        "title": "📍 Customer Journey Map",
+        "category": "Marketing",
+        "desc": "Visualizes user touchpoints.",
+        "prompt": "You are a CX Specialist. Create a Customer Journey Map for buying a car. List the Touchpoints, Customer Thoughts, and Pain Points for the 'Research' and 'Test Drive' phases.",
+        "trending": false
+    },
+    {
+        "title": "🔄 Synonym Swapper",
+        "category": "Writing",
+        "desc": "Expands vocabulary.",
+        "prompt": "You are a Thesaurus. Provide 5 synonyms for the word '[WORD]' that fit a formal academic context. Explain the subtle differences in meaning.",
+        "trending": false
+    },
+    {
+        "title": "📝 Lean Canvas Creator",
+        "category": "Business",
+        "desc": "One-page business plan.",
+        "prompt": "You are a Startup Founder. Create a Lean Canvas for a mobile app that [FUNCTION]. Fill out the 'Unfair Advantage' and 'Revenue Streams' boxes.",
+        "trending": true
+    },
+    {
+        "title": "📧 RegEx Email Validator",
+        "category": "Development",
+        "desc": "Validates input formats.",
+        "prompt": "You are a RegEx Wizard. Write a Regular Expression to validate a standard email address. Explain what each token in the expression matches.",
+        "trending": true
+    },
+    {
+        "title": "🖼️ YouTube Thumbnail Text",
+        "category": "Social Media",
+        "desc": "Short, punchy overlay text.",
+        "prompt": "You are a YouTube Strategist. Suggest 3 options for the text overlay on a thumbnail for a video titled '[VIDEO TITLE]'. The text must be under 5 words and highly clickable.",
+        "trending": false
+    },
+    {
+        "title": "🧪 A/B Test Planner",
+        "category": "Marketing",
+        "desc": "Designs split tests.",
+        "prompt": "You are a Growth Hacker. Design an A/B test for a checkout page to increase conversion. Define the Variable (e.g., Button Color), the Hypothesis, and the Success Metric.",
+        "trending": false
+    },
+    {
+        "title": "📚 Syllabus Creator",
+        "category": "Learning",
+        "desc": "Outlines a course.",
+        "prompt": "You are a University Professor. Create a 12-week syllabus for a course on 'Introduction to AI'. List the weekly topics and the final project requirement.",
+        "trending": false
+    },
+    
+    {
+        "title": "🐍 Python Decorator",
+        "category": "Development",
+        "desc": "Writes a reusable wrapper function.",
+        "prompt": "You are a Senior Python Developer. Write a custom decorator named `@timer` that measures and prints the execution time of any function it decorates. Include type hinting.",
+        "trending": true
+    },
+    {
+        "title": "⚡ FastAPI Endpoint",
+        "category": "Development",
+        "desc": "Creates a high-performance API route.",
+        "prompt": "You are a Backend Engineer. Create a FastAPI `POST` endpoint that accepts a JSON body (using Pydantic models). Implement error handling for invalid data types.",
+        "trending": false
+    },
+    {
+        "title": "🎨 Tailwind Config",
+        "category": "Development",
+        "desc": "Customizes CSS framework themes.",
+        "prompt": "You are a Frontend Architect. Generate a `tailwind.config.js` file that extends the default theme. Add custom colors for 'primary' and 'secondary' brands and a custom font family.",
+        "trending": true
+    },
+    {
+        "title": "📱 SwiftUI View Builder",
+        "category": "Development",
+        "desc": "Creates iOS UI components.",
+        "prompt": "You are an iOS Developer. Write a SwiftUI view for a 'Profile Card'. Include an image with a circular clip shape, a text name, and a bio. Use a VStack and HStack for layout.",
+        "trending": false
+    },
+    {
+        "title": "🐳 Docker Compose Setup",
+        "category": "Development",
+        "desc": "Orchestrates multi-container apps.",
+        "prompt": "You are a DevOps Engineer. Write a `docker-compose.yml` file to spin up a PostgreSQL database and a Redis cache. Include environment variables for passwords.",
+        "trending": true
+    },
+    {
+        "title": "☁️ AWS Lambda Function",
+        "category": "Development",
+        "desc": "Writes serverless compute code.",
+        "prompt": "You are a Cloud Developer. Write a Node.js Lambda function that triggers when an object is uploaded to an S3 bucket. The function should log the file name and size.",
+        "trending": false
+    },
+    {
+        "title": "🛡️ Git Merge Conflict",
+        "category": "Development",
+        "desc": "Resolves version control clashes.",
+        "prompt": "You are a Git Expert. Explain how to resolve a merge conflict in the terminal. Provide the specific commands to checkout, edit, add, and commit the resolution.",
+        "trending": false
+    },
+    {
+        "title": "☕ Java Stream API",
+        "category": "Development",
+        "desc": "Processes collections functionally.",
+        "prompt": "You are a Java Developer. rewrite this `for` loop using the Java 8 Stream API. Filter the list for even numbers, map them to their square, and collect the result into a List.",
+        "trending": false
+    },
+    {
+        "title": "🕸️ C++ Pointer Logic",
+        "category": "Development",
+        "desc": "Explains memory management.",
+        "prompt": "You are a C++ Tutor. Explain the difference between a raw pointer, `std::unique_ptr`, and `std::shared_ptr`. Provide a code example showing when to use each.",
+        "trending": false
+    },
+    {
+        "title": "🤖 Midjourney Negative Prompts",
+        "category": "Design",
+        "desc": "Removes artifacts from AI art.",
+        "prompt": "You are an AI Art Curator. List 20 negative prompt keywords to use in Midjourney to prevent bad anatomy, blurry details, and text artifacts.",
+        "trending": true
+    },
+    {
+        "title": "🖊️ Font Pairing Guide",
+        "category": "Design",
+        "desc": "Matches typefaces for web.",
+        "prompt": "You are a Typography Expert. Suggest a Google Font pairing for a modern tech blog. One Serif for headers and one Sans-Serif for body text. Explain the visual hierarchy.",
+        "trending": false
+    },
+    {
+        "title": "🧊 Blender Python Script",
+        "category": "Design",
+        "desc": "Automates 3D tasks.",
+        "prompt": "You are a 3D Artist. Write a Python script for Blender (`bpy`) to generate a grid of 100 random cubes. Randomize their scale and rotation.",
+        "trending": false
+    },
+    {
+        "title": "📊 Tableau Calculated Field",
+        "category": "Data",
+        "desc": "Creates custom metrics.",
+        "prompt": "You are a Data Analyst. Write a Tableau Calculated Field formula to group 'Sales' into 'High', 'Medium', and 'Low' categories based on threshold values.",
+        "trending": false
+    },
+    {
+        "title": "📉 Index/Match vs VLOOKUP",
+        "category": "Data",
+        "desc": "Explains advanced Excel lookups.",
+        "prompt": "You are an Excel Wizard. Explain why `INDEX` and `MATCH` is superior to `VLOOKUP` for large datasets. Provide the syntax for an INDEX/MATCH lookup.",
+        "trending": true
+    },
+    {
+        "title": "🗄️ SQL Stored Procedure",
+        "category": "Data",
+        "desc": "Automates database tasks.",
+        "prompt": "You are a DBA. Write a Stored Procedure in SQL Server to archive old orders. It should move records older than 1 year from the `Orders` table to the `Orders_Archive` table.",
+        "trending": false
+    },
+    {
+        "title": "🎙️ Podcast Show Notes",
+        "category": "Content",
+        "desc": "Summarizes audio episodes.",
+        "prompt": "You are a Podcast Producer. Write the show notes for an episode about [TOPIC]. Include a hook, 3 bullet points of key takeaways, and a list of mentioned resources.",
+        "trending": true
+    },
+    {
+        "title": "🕺 TikTok Trend Spotter",
+        "category": "Social Media",
+        "desc": "Identifies viral audio/formats.",
+        "prompt": "You are a Social Media Manager. Identify 3 current TikTok trends suitable for a [BRAND TYPE]. Explain the video format and the audio to use.",
+        "trending": true
+    },
+    {
+        "title": "🔗 LinkedIn Cold DM",
+        "category": "Sales",
+        "desc": "Starts professional conversations.",
+        "prompt": "You are a Sales Development Rep. Write a non-spammy LinkedIn DM to a potential client. Reference a specific recent post they made to build rapport before pitching.",
+        "trending": true
+    },
+    {
+        "title": "📢 PR Crisis Tweet",
+        "category": "Communication",
+        "desc": "Drafts rapid response.",
+        "prompt": "You are a PR Specialist. Write a short, empathetic tweet acknowledging a service outage. Do not make promises you can't keep. Direct users to a status page.",
+        "trending": false
+    },
+    {
+        "title": "🤝 Apology Email",
+        "category": "Communication",
+        "desc": "Repairs relationships.",
+        "prompt": "You are an Executive Assistant. Draft an apology email to a client for missing a scheduled meeting. Take full responsibility and offer 3 specific times to reschedule.",
+        "trending": false
+    },
+    {
+        "title": "💬 Slack Etiquette",
+        "category": "Communication",
+        "desc": "Advises on workplace chat.",
+        "prompt": "You are a Remote Work Coach. Rewrite this passive-aggressive Slack message to be constructive and collaborative. Message: 'Did you even read the brief I sent?'",
+        "trending": false
+    },
+    {
+        "title": "📝 User Story Mapper",
+        "category": "Product",
+        "desc": "Breaks down features.",
+        "prompt": "You are a Product Owner. Write a User Story for a 'Login Feature' using the 'As a... I want to... So that...' format. Include Acceptance Criteria.",
+        "trending": true
+    },
+    {
+        "title": "📄 PRD Writer",
+        "category": "Product",
+        "desc": "Drafts Product Requirements Docs.",
+        "prompt": "You are a Product Manager. Outline a PRD for a new 'Dark Mode' feature. Include 'Problem Statement', 'Success Metrics', and 'Out of Scope' sections.",
+        "trending": false
+    },
+    {
+        "title": "🚀 MVP Scope Definer",
+        "category": "Business",
+        "desc": "Prioritizes launch features.",
+        "prompt": "You are a Startup Founder. I have a list of 10 features for my app. Help me select the top 3 that are absolutely essential for a Minimum Viable Product (MVP). Explain your reasoning.",
+        "trending": true
+    },
+    {
+        "title": "💸 Cash Flow Forecast",
+        "category": "Business",
+        "desc": "Predicts financial health.",
+        "prompt": "You are a CFO. Explain how to build a 13-week cash flow forecast. List the key inputs (Accounts Receivable, Payable, Payroll) needed.",
+        "trending": false
+    },
+    {
+        "title": "👼 Angel Investor Update",
+        "category": "Business",
+        "desc": "Updates stakeholders.",
+        "prompt": "You are a CEO. Draft a monthly update email to angel investors. Include 'Highlights', 'Lowlights', 'KPIs', and a specific 'Ask' for help.",
+        "trending": false
+    },
+    {
+        "title": "📊 Value Prop Canvas",
+        "category": "Business",
+        "desc": "Aligns product with market.",
+        "prompt": "You are a Business Strategist. Fill out the Value Proposition Canvas for a [PRODUCT]. Match the 'Customer Pains' with the 'Product Pain Relievers'.",
+        "trending": false
+    },
+    {
+        "title": "🚦 SEO Audit Checklist",
+        "category": "Marketing",
+        "desc": "Checks website health.",
+        "prompt": "You are an SEO Auditor. Create a 10-point checklist to audit a website's technical SEO. Include checks for broken links, XML sitemaps, and Core Web Vitals.",
+        "trending": true
+    },
+    {
+        "title": "📈 Google Analytics 4",
+        "category": "Marketing",
+        "desc": "Configures tracking events.",
+        "prompt": "You are a Data Marketer. Explain how to set up a custom event in GA4 to track 'Button Clicks'. Describe the parameters needed.",
+        "trending": false
+    },
+    {
+        "title": "🔗 UTM Builder",
+        "category": "Marketing",
+        "desc": "Tracks campaign traffic.",
+        "prompt": "You are a Digital Marketer. Construct a UTM-tagged URL for a Fall Sale campaign. Source: Newsletter, Medium: Email, Campaign: fall_sale_2023.",
+        "trending": false
+    },
+    {
+        "title": "👤 Customer Persona",
+        "category": "Marketing",
+        "desc": "Profiles target audience.",
+        "prompt": "You are a Market Researcher. Create a detailed Customer Persona for a B2B SaaS product. Include demographics, job title, goals, and primary sources of information.",
+        "trending": false
+    },
+    {
+        "title": "📅 Monthly Review",
+        "category": "Productivity",
+        "desc": "Reflects on progress.",
+        "prompt": "You are a Productivity Coach. Guide me through a Monthly Review process. Ask 3 questions to help me evaluate what went well and what I need to change for next month.",
+        "trending": false
+    },
+    {
+        "title": "🍅 Pomodoro Planner",
+        "category": "Productivity",
+        "desc": "Breaks tasks into 25m chunks.",
+        "prompt": "You are a Time Management Expert. Break down the task '[LARGE TASK]' into 4 Pomodoro sessions (25 mins each). Describe the specific sub-task to focus on for each interval.",
+        "trending": false
+    },
+    {
+        "title": "Quadrants (Eisenhower)",
+        "category": "Productivity",
+        "desc": "Prioritizes tasks by urgency.",
+        "prompt": "You are an Executive Coach. Help me categorize my to-do list using the Eisenhower Matrix (Do, Decide, Delegate, Delete). Here is my list: [LIST].",
+        "trending": true
+    },
+    {
+        "title": "📓 Bullet Journal Setup",
+        "category": "Personal",
+        "desc": "Organizes life analog style.",
+        "prompt": "You are a Bullet Journal Enthusiast. Describe a layout for a 'Future Log' and a 'Habit Tracker'. Suggest symbols to use for tasks, events, and notes.",
+        "trending": false
+    },
+    {
+        "title": "🥑 Keto Meal Prep",
+        "category": "Personal",
+        "desc": "Plans low-carb meals.",
+        "prompt": "You are a Nutrition Coach. Suggest 3 Keto-friendly lunch ideas that can be meal-prepped on Sunday and stay fresh until Thursday. Include macro estimates.",
+        "trending": false
+    },
+    {
+        "title": "🏃 Marathon Training",
+        "category": "Personal",
+        "desc": "Schedules running plans.",
+        "prompt": "You are a Running Coach. Create a 1-week snapshot of a marathon training plan (Week 8 of 16). Include a Long Run, Speed Work, and Cross-Training.",
+        "trending": false
+    },
+    {
+        "title": "🥂 Wedding Speech",
+        "category": "Personal",
+        "desc": "Writes toasts for receptions.",
+        "prompt": "You are a Best Man. Write a 2-minute wedding speech. Balance humor about the groom with genuine sentiment for the couple. Avoid controversial topics.",
+        "trending": false
+    },
+    {
+        "title": "😴 Dream Interpreter",
+        "category": "Fun",
+        "desc": "Analyzes symbols in dreams.",
+        "prompt": "You are a Jungian Analyst. Interpret the symbolism of [DREAM OBJECT, e.g., losing teeth] in a dream. Discuss the potential subconscious meaning related to anxiety or transition.",
+        "trending": false
+    },
+    {
+        "title": "👹 Horror Story Short",
+        "category": "Creative Writing",
+        "desc": "Writes spooky flash fiction.",
+        "prompt": "You are a Horror Author. Write a two-sentence horror story. The first sentence should set a normal scene, and the second should reveal a terrifying twist.",
+        "trending": false
+    },
+    {
+        "title": "🌸 Haiku Generator",
+        "category": "Creative Writing",
+        "desc": "Writes 5-7-5 poetry.",
+        "prompt": "You are a Japanese Poet. Write a Haiku about [TOPIC]. Strictly adhere to the 5-7-5 syllable structure. Focus on nature imagery.",
+        "trending": false
+    },
+    {
+        "title": "🤣 Dad Joke Generator",
+        "category": "Fun",
+        "desc": "Creates puns.",
+        "prompt": "You are a Comedian. Tell me a dad joke about [TOPIC]. It must be a pun. Include the buildup and the punchline.",
+        "trending": false
+    },
+    {
+        "title": "❓ Trivia Host",
+        "category": "Fun",
+        "desc": "Runs a quiz night.",
+        "prompt": "You are a Pub Trivia Host. Generate a round of 5 questions on the theme '90s Pop Culture'. Include the answers and a tie-breaker question.",
+        "trending": false
+    },
+    {
+        "title": "📄 Resume Keyword Optimizer",
+        "category": "Career",
+        "desc": "Beats the ATS bots.",
+        "prompt": "You are a Resume Expert. Optimize the 'Skills' section of my resume for a [JOB TITLE] role. Ensure I include standard industry keywords that ATS systems look for.",
+        "trending": true
+    },
+    {
+        "title": "💰 Salary Market Rate",
+        "category": "HR",
+        "desc": "Estimates fair pay.",
+        "prompt": "You are a Compensation Analyst. What is the typical salary range for a Senior Product Designer in [CITY/REGION]? List the factors that might push a candidate to the top of that range.",
+        "trending": true
+    },
+    {
+        "title": "📘 Employee Handbook",
+        "category": "HR",
+        "desc": "Drafts company policies.",
+        "prompt": "You are an HR Director. Draft a 'Remote Work Policy' for the employee handbook. Cover working hours, communication expectations, and equipment reimbursement.",
+        "trending": false
+    },
+    {
+        "title": "🕸️ GraphQL Resolver",
+        "category": "Development",
+        "desc": "Writes backend logic for queries.",
+        "prompt": "You are a Backend Developer. Write a JavaScript GraphQL resolver function for `getUser(id)`. It should fetch data from a MongoDB database and handle the case where the user is not found.",
+        "trending": false
+    },
+    {
+        "title": "🔧 Kotlin Coroutines",
+        "category": "Development",
+        "desc": "Manages async tasks in Android.",
+        "prompt": "You are an Android Developer. Write a Kotlin function using Coroutines to perform a network request on the IO dispatcher and update the UI on the Main dispatcher.",
+        "trending": false
+    },
+    {
+        "title": "🎨 Color Grading Assistant",
+        "category": "Design",
+        "desc": "Suggests video/photo moods.",
+        "prompt": "You are a Colorist. Describe how to achieve a 'Teal and Orange' look in a video editor. Explain which colors to push into the shadows and which into the highlights.",
+        "trending": false
+    },
+    {
+        "title": "🏗️ System Design Interview",
+        "category": "Development",
+        "desc": "Architects large scale apps.",
+        "prompt": "You are a Principal Engineer. Outline the high-level architecture for designing a URL Shortener (like bit.ly). Discuss database choice, hashing algorithms, and handling high read traffic.",
+        "trending": true
+    }
+
+
+
+
 ]
