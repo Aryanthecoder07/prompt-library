@@ -217,7 +217,7 @@ if page_selection == "🔍 Browse Prompts":
                         st.markdown("#### Prompt") 
                         st.code(prompt_item['prompt'], language="text", wrap_lines=True)
     else:
-        st.info("No prompts found.")
+        st.info("No prompts found.Use AI prompt generator.")
 
 # ==========================================
 # PAGE 2: AI PROMPT GENERATOR (UPDATED)
@@ -411,3 +411,4 @@ elif page_selection == "⚙️ Admin Panel":
                     delete_category(cat_to_delete, delete_prompts=False)
                     st.success(f"Deleted '{cat_to_delete}'. Prompts moved to 'Uncategorized'.")
                     st.rerun()
+
