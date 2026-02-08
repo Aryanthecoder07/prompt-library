@@ -2,18 +2,21 @@ import streamlit as st
 import sqlite3
 import json
 import os
+import google.generativeai as genai
+from dotenv import load_dotenv
+load_dotenv()
 
 # 1. PAGE CONFIGURATION
 st.set_page_config(layout="wide", page_title="RTC Prompt Library", page_icon="⚡")
 
 # --- CONFIGURATION ---
 DB_FILE = "prompts.db"
-ADMIN_PASSWORD = "admin123"  # <--- SET YOUR PASSWORD HERE
+ADMIN_PASSWORD = os.environ.get("ADMIN_PASSWORD")  # Default password if not set in .env
 
 # --- DATABASE MANAGEMENT FUNCTIONS ---
 def get_connection():
     conn = sqlite3.connect(DB_FILE, check_same_thread=False)
-    conn.row_factory = sqlite3.Row  # Access columns by name
+    conn.row_factory = sqlite3.Row
     return conn
 
 def init_db():
@@ -40,7 +43,7 @@ def init_db():
         )
     ''')
     
-    # Initialize default categories if table is empty
+    # Initialize default categories
     c.execute("SELECT count(*) FROM categories")
     if c.fetchone()[0] == 0:
         default_cats = ["Communication", "Development", "Productivity", "Data", 
@@ -63,9 +66,7 @@ def migrate_json_if_needed():
         with open('prompts.json', 'r', encoding='utf-8') as f:
             data = json.load(f)
             for p in data:
-                # Ensure category exists in the new categories table
                 c.execute("INSERT OR IGNORE INTO categories (name) VALUES (?)", (p['category'],))
-                
                 c.execute('''
                     INSERT INTO prompts (title, category, desc, prompt, trending)
                     VALUES (?, ?, ?, ?, ?)
@@ -134,9 +135,7 @@ def rename_category(old_name, new_name):
     conn = get_connection()
     c = conn.cursor()
     try:
-        # Update category name in categories table
         c.execute("UPDATE categories SET name=? WHERE name=?", (new_name, old_name))
-        # Update all prompts that had the old category name 
         c.execute("UPDATE prompts SET category=? WHERE category=?", (new_name, old_name))
         conn.commit()
         return True
@@ -148,19 +147,12 @@ def rename_category(old_name, new_name):
 def delete_category(name, delete_prompts=False):
     conn = get_connection()
     c = conn.cursor()
-    
-    # Delete the category from categories table
     c.execute("DELETE FROM categories WHERE name=?", (name,))
-    
     if delete_prompts:
-        # Delete all prompts in this category
         c.execute("DELETE FROM prompts WHERE category=?", (name,))
     else:
-        # Move prompts to 'Uncategorized'
-        # Ensure Uncategorized exists
         c.execute("INSERT OR IGNORE INTO categories (name) VALUES ('Uncategorized')")
         c.execute("UPDATE prompts SET category='Uncategorized' WHERE category=?", (name,))
-        
     conn.commit()
     conn.close()
 
@@ -171,8 +163,11 @@ migrate_json_if_needed()
 # --- SIDEBAR NAVIGATION ---
 with st.sidebar:
     st.title("⚡ RTC Library")
-    page_selection = st.radio("Navigation", ["🔍 Browse Prompts", "⚙️ Admin Panel"])
     
+    page_selection = st.radio("Navigation", ["🔍 Browse Prompts", "✨ AI Prompt Generator", "⚙️ Admin Panel"])
+    
+    st.divider()
+
     # Initialize session state for login
     if 'authenticated' not in st.session_state:
         st.session_state.authenticated = False
@@ -225,7 +220,71 @@ if page_selection == "🔍 Browse Prompts":
         st.info("No prompts found.")
 
 # ==========================================
-# PAGE 2: ADMIN PANEL
+# PAGE 2: AI PROMPT GENERATOR (UPDATED)
+# ==========================================
+elif page_selection == "✨ AI Prompt Generator":
+    st.title("✨ AI Prompt Generator")
+    st.markdown("""
+    Enter a topic, and **RTC** will automatically design the **Role, Task, and Context** to generate the perfect prompt for you.
+    """)
+
+    # Simplified Input Form
+    with st.container(border=True):
+        topic = st.text_input("💡 Enter Topic / Goal", placeholder="e.g. Salary Negotiation, Debugging Python Code, Writing a LinkedIn Post...")
+        generate_btn = st.button("🚀 Generate Auto-Prompt", type="primary")
+
+    # Generation Logic
+    if generate_btn:
+        if not topic:
+            st.error("Please enter a topic first.")
+        else:
+            try:
+                # Load API Key directly from Environment Variable
+                api_key = os.environ.get("GOOGLE_API_KEY")
+                
+                if not api_key:
+                    st.error("⚠️ `GOOGLE_API_KEY` not found in environment variables.")
+                    st.info("Please set the environment variable in your terminal: `export GOOGLE_API_KEY='your_key'`")
+                else:
+                    with st.spinner(f"Brainstorming the best strategy for '{topic}'..."):
+                        genai.configure(api_key=api_key)
+                        
+                        # Using gemini-1.5-flash for speed
+                        model = genai.GenerativeModel('gemini-2.5-flash')
+                        
+                        # The Meta-Prompt (Updated for Auto-RTC)
+                        meta_prompt = f"""
+                        You are an expert Prompt Engineer. The user wants a prompt for the topic: "{topic}".
+                        
+                        YOUR JOB:
+                        1.  **Analyze the Topic:** Determine the most effective **Role** (Who the AI should be), the specific **Task** (What it should do), and the necessary **Context** (Constraints/Background) to get the best result.
+                        2.  **Generate the Prompt:** Write a high-quality, ready-to-copy prompt based on those parameters.
+                        
+                        OUTPUT FORMAT:
+                        Please output the response in this exact markdown format:
+                        
+                        **Strategy:**
+                         [Role you chose].[Task you defined].[Context you assumed].
+                        
+                        ***
+                        
+                        **Generated Prompt:**
+                        ```text
+                        [The Prompt Text Goes Here]
+                        ```
+                        """
+                        
+                        response = model.generate_content(meta_prompt)
+                        
+                        st.markdown(response.text)
+                        st.success("Prompt generated!")
+                    
+            except Exception as e:
+                st.error(f"An error occurred: {str(e)}")
+
+
+# ==========================================
+# PAGE 3: ADMIN PANEL
 # ==========================================
 elif page_selection == "⚙️ Admin Panel":
     
@@ -241,10 +300,8 @@ elif page_selection == "⚙️ Admin Panel":
     else:
         st.title("⚙️ Admin Dashboard")
         
-        # Tabs including new Category Manager
         tab1, tab2, tab3 = st.tabs(["➕ Add New Prompt", "✏️ Manage Prompts", "📂 Manage Categories"])
         
-        # Helper to refresh categories dynamically
         current_categories = get_all_categories()
 
         # --- TAB 1: ADD NEW PROMPT ---
@@ -300,7 +357,7 @@ elif page_selection == "⚙️ Admin Panel":
                     st.error("Prompt deleted.")
                     st.rerun()
 
-        # --- TAB 3: MANAGE CATEGORIES (NEW FEATURE) ---
+        # --- TAB 3: MANAGE CATEGORIES ---
         with tab3:
             st.subheader("📂 Category Management")
             
@@ -345,14 +402,11 @@ elif page_selection == "⚙️ Admin Panel":
                 
                 col_d1, col_d2 = st.columns(2)
                 
-                # Delete logic explained in UI
-                # Option 1: Delete everything
                 if col_d1.button("🔥 Delete Category & ALL its Prompts"):
                     delete_category(cat_to_delete, delete_prompts=True)
                     st.success(f"Deleted '{cat_to_delete}' and all associated prompts.")
                     st.rerun()
                     
-                # Option 2: Move prompts to uncategorized
                 if col_d2.button("📦 Delete Category (Move Prompts to Uncategorized)"):
                     delete_category(cat_to_delete, delete_prompts=False)
                     st.success(f"Deleted '{cat_to_delete}'. Prompts moved to 'Uncategorized'.")
