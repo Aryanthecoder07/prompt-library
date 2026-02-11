@@ -11,7 +11,7 @@
         "category": "Development",
         "desc": "Finds logical errors and syntax issues in code snippets.",
         "prompt": "You are a Senior Python Developer and Code Reviewer. Analyze the following code snippet for syntax errors, logical bugs, and security vulnerabilities. Explain the error first, then provide the corrected code block. Do not explain basic concepts.",
-        "trending": true
+        "trending": false
     },
     {
         "title": "📝 Meeting Summarizer",
@@ -25,7 +25,7 @@
         "category": "Data",
         "desc": "Generates complex Excel/Sheets formulas from plain English.",
         "prompt": "You are an Excel MVP. Create a complex Excel formula based on the user's requirement. Provide the formula inside a code block. Explain how it works in one sentence.",
-        "trending": true
+        "trending": false
     },
     {
         "title": "🎨 Midjourney Prompt Generator",
@@ -46,7 +46,7 @@
         "category": "Content",
         "desc": "Creates a structured SEO-friendly outline.",
         "prompt": "You are an SEO Content Strategist. Create a detailed outline for a blog post on the provided topic. Include H1, H2, and H3 tags. Suggest a target keyword density.",
-        "trending": true
+        "trending": false
     },
     {
         "title": "🔍 SQL Query Writer",
@@ -347,7 +347,7 @@
         "category": "Personal",
         "desc": "Suggests gifts for people.",
         "prompt": "You are a Personal Shopper. Suggest 5 gift ideas for a [PERSON] who likes [INTERESTS]. Include a mix of budget-friendly and premium options.",
-        "trending": true
+        "trending": false
     },
     {
         "title": "🧩 Excel Macro Writer",
@@ -369,14 +369,14 @@
         "category": "Development",
         "desc": "Identifies vulnerabilities in code or system architecture.",
         "prompt": "You are a Chief Information Security Officer (CISO). Analyze the provided system architecture description for potential security risks (OWASP Top 10). Suggest specific mitigation strategies for each risk.",
-        "trending": true
+        "trending": false
     },
     {
         "title": "📊 Data Viz Consultant",
         "category": "Data",
         "desc": "Recommends the best chart type for data.",
         "prompt": "You are a Data Visualization Expert. I have the following dataset: [DATA DESCRIPTION]. Recommend the best 3 chart types to visualize this data effectively. Explain why each is suitable.",
-        "trending": true
+        "trending": false
     },
     {
         "title": "🗣️ Public Speaking Coach",
@@ -397,7 +397,7 @@
         "category": "Personal",
         "desc": "Reframes negative thoughts using CBT techniques.",
         "prompt": "You are a CBT Therapist. Help me reframe this negative thought: '[THOUGHT]'. Identify the cognitive distortion involved and provide a more balanced, realistic perspective.",
-        "trending": true
+        "trending": false
     },
     {
         "title": "📱 Flutter Widget Architect",
@@ -432,7 +432,7 @@
         "category": "Business",
         "desc": "Highlights potential red flags in clauses.",
         "prompt": "You are a Corporate Lawyer. Review the following contract clause for ambiguity or unfair terms. Highlight potential risks for the signatory. (Disclaimer: Not legal advice).",
-        "trending": true
+        "trending": false
     },
     {
         "title": "🩺 Symptom Checker (Triage)",
@@ -460,7 +460,7 @@
         "category": "Communication",
         "desc": "Drafts responses to public PR disasters.",
         "prompt": "You are a PR Crisis Manager. Draft a public apology statement for [COMPANY] regarding [INCIDENT]. The tone must be remorseful, transparent, and action-oriented. Avoid defensive language.",
-        "trending": true
+        "trending": false
     },
     {
         "title": "🌍 Cultural Etiquette Guide",
@@ -537,7 +537,7 @@
         "category": "Business",
         "desc": "Suggests pricing tiers for software.",
         "prompt": "You are a Product Strategy Consultant. Suggest a 3-tier pricing model (Basic, Pro, Enterprise) for a SaaS product that does [FUNCTION]. Define the feature gates for each tier.",
-        "trending": true
+        "trending": false
     },
     {
         "title": "📵 Digital Detox Coach",
@@ -607,7 +607,7 @@
         "category": "Data",
         "desc": "Explains financial charts and terms.",
         "prompt": "You are a Financial Analyst. Explain the concept of [TERM, e.g., Short Selling] to a beginner. Use a lemonade stand analogy to make it understandable.",
-        "trending": true
+        "trending": false
     },
     {
         "title": "🔨 Rust Ownership Explain",
@@ -628,14 +628,14 @@
         "category": "Creative Writing",
         "desc": "Generates encounters for RPGs.",
         "prompt": "You are a Dungeon Master. Create a combat encounter for a party of level [LEVEL] adventurers. Describe the setting, the monsters, and a unique environmental hazard.",
-        "trending": true
+        "trending": false
     },
     {
         "title": "👔 Career Pivot Advisor",
         "category": "HR",
         "desc": "Advises on switching industries.",
         "prompt": "You are a Career Coach. I am currently a [CURRENT ROLE] wanting to become a [TARGET ROLE]. Identify transferable skills I likely have and list 3 skills I need to learn immediately.",
-        "trending": true
+        "trending": false
     },
     {
         "title": "🧹 Decluttering Expert",
@@ -691,7 +691,7 @@
         "category": "Learning",
         "desc": "Teaches colloquialisms.",
         "prompt": "You are a Local Guide. Teach me 10 common slang words or phrases used in [REGION/LANGUAGE] that aren't in textbooks. Explain the context and how to use them naturally.",
-        "trending": true
+        "trending": false
     },
     {
         "title": "📱 App Store Description",
@@ -720,7 +720,7 @@
         "category": "Development",
         "desc": "Writes a script to extract data from a website.",
         "prompt": "You are a Python Developer. Write a script using Beautiful Soup and Requests to scrape the titles and prices from a fictional e-commerce site. Handle pagination and save the data to a CSV.",
-        "trending": true
+        "trending": false
     },
     {
         "title": "🎨 UX Microcopy Writer",
@@ -734,7 +734,7 @@
         "category": "Data",
         "desc": "Designs a relational database structure.",
         "prompt": "You are a Database Architect. Design a normalized schema (3NF) for a library management system. Include tables for Books, Members, Loans, and Authors. Define primary and foreign keys.",
-        "trending": true
+        "trending": false
     },
     {
         "title": "🤖 ML Model Explainer",
@@ -797,7 +797,7 @@
         "category": "Sales",
         "desc": "Scripts responses to hesitant clients.",
         "prompt": "You are a Sales Trainer. Provide 3 different scripts to handle the objection: 'It's too expensive.' focus on Value, ROI, and Payment Terms respectively.",
-        "trending": true
+        "trending": false
     },
     {
         "title": "🛋️ Interior Design Consultant",
@@ -853,7 +853,7 @@
         "category": "Creative Writing",
         "desc": "Writes conversation between characters.",
         "prompt": "You are a Screenwriter. Write a dialogue scene between two characters who are secretly in love but arguing about who should pay the dinner bill. Subtext is key.",
-        "trending": true
+        "trending": false
     },
     {
         "title": "📧 Subject Line Tester",
@@ -867,7 +867,7 @@
         "category": "Marketing",
         "desc": "Writes persuasive web copy.",
         "prompt": "You are a Conversion Copywriter. Write the Headline, Subheadline, and CTA button text for a landing page selling [PRODUCT]. Focus on the primary pain point solved.",
-        "trending": true
+        "trending": false
     },
     {
         "title": "📢 Facebook Ad Copy",
@@ -972,7 +972,7 @@
         "category": "Career",
         "desc": "Optimizes CV achievements.",
         "prompt": "You are a Resume Writer. Rewrite this job duty into a results-oriented bullet point using the 'Action Verb + Task + Result' formula. Add metrics where possible.",
-        "trending": true
+        "trending": false
     },
     {
         "title": "💬 LinkedIn Commenter",
@@ -1028,7 +1028,7 @@
         "category": "Development",
         "desc": "Writes Vue.js single file components.",
         "prompt": "You are a Frontend Dev. Create a Vue.js 3 component (Composition API) for a countdown timer. Include the template, script, and scoped styles.",
-        "trending": true
+        "trending": false
     },
     {
         "title": "📊 Google Ads Keywords",
@@ -1099,7 +1099,7 @@
         "category": "Learning",
         "desc": "Applies ancient wisdom to modern problems.",
         "prompt": "You are Marcus Aurelius. I am stressed about a deadline I cannot control. Provide a Stoic perspective on how to handle this anxiety using the dichotomy of control.",
-        "trending": true
+        "trending": false
     },
     {
         "title": "📉 Excel Pivot Master",
@@ -1141,7 +1141,7 @@
         "category": "Business",
         "desc": "Drafts Non-Disclosure Agreements.",
         "prompt": "You are a Legal Assistant. Draft a standard mutual Non-Disclosure Agreement (NDA) between two parties. Include clauses for 'Confidential Information' definition and 'Term of Agreement'.",
-        "trending": true
+        "trending": false
     },
     {
         "title": "🚀 Startup Pitch Deck",
@@ -1197,7 +1197,7 @@
         "category": "Writing",
         "desc": "Strengthens writing style.",
         "prompt": "You are a Book Editor. Rewrite the following paragraph to remove passive voice. Make the subjects of the sentences perform the action. Keep the tone punchy.",
-        "trending": true
+        "trending": false
     },
     {
         "title": "💎 USP Generator",
@@ -1225,7 +1225,7 @@
         "category": "Learning",
         "desc": "Deepens understanding by teaching.",
         "prompt": "You are a Physics Tutor. Use the Feynman Technique to explain Quantum Entanglement. Pretend you are teaching it to a 12-year-old. Identify gaps in the explanation.",
-        "trending": true
+        "trending": false
     },
     {
         "title": "📊 R ggplot2 Wizard",
@@ -1309,7 +1309,7 @@
         "category": "Data",
         "desc": "Calculates running totals/ranks.",
         "prompt": "You are a SQL Expert. Write a query using `ROW_NUMBER()` and `PARTITION BY` to find the top 3 highest-paid employees in each department.",
-        "trending": true
+        "trending": false
     },
     {
         "title": "🕸️ GraphQL Schema",
@@ -1379,7 +1379,7 @@
         "category": "Business",
         "desc": "One-page business plan.",
         "prompt": "You are a Startup Founder. Create a Lean Canvas for a mobile app that [FUNCTION]. Fill out the 'Unfair Advantage' and 'Revenue Streams' boxes.",
-        "trending": true
+        "trending": false
     },
     {
         "title": "📧 RegEx Email Validator",
@@ -1429,7 +1429,7 @@
         "category": "Development",
         "desc": "Customizes CSS framework themes.",
         "prompt": "You are a Frontend Architect. Generate a `tailwind.config.js` file that extends the default theme. Add custom colors for 'primary' and 'secondary' brands and a custom font family.",
-        "trending": true
+        "trending": false
     },
     {
         "title": "📱 SwiftUI View Builder",
@@ -1478,7 +1478,7 @@
         "category": "Design",
         "desc": "Removes artifacts from AI art.",
         "prompt": "You are an AI Art Curator. List 20 negative prompt keywords to use in Midjourney to prevent bad anatomy, blurry details, and text artifacts.",
-        "trending": true
+        "trending": false
     },
     {
         "title": "🖊️ Font Pairing Guide",
@@ -1520,7 +1520,7 @@
         "category": "Content",
         "desc": "Summarizes audio episodes.",
         "prompt": "You are a Podcast Producer. Write the show notes for an episode about [TOPIC]. Include a hook, 3 bullet points of key takeaways, and a list of mentioned resources.",
-        "trending": true
+        "trending": false
     },
     {
         "title": "🕺 TikTok Trend Spotter",
@@ -1534,7 +1534,7 @@
         "category": "Sales",
         "desc": "Starts professional conversations.",
         "prompt": "You are a Sales Development Rep. Write a non-spammy LinkedIn DM to a potential client. Reference a specific recent post they made to build rapport before pitching.",
-        "trending": true
+        "trending": false
     },
     {
         "title": "📢 PR Crisis Tweet",
@@ -1576,7 +1576,7 @@
         "category": "Business",
         "desc": "Prioritizes launch features.",
         "prompt": "You are a Startup Founder. I have a list of 10 features for my app. Help me select the top 3 that are absolutely essential for a Minimum Viable Product (MVP). Explain your reasoning.",
-        "trending": true
+        "trending": false
     },
     {
         "title": "💸 Cash Flow Forecast",
@@ -1604,7 +1604,7 @@
         "category": "Marketing",
         "desc": "Checks website health.",
         "prompt": "You are an SEO Auditor. Create a 10-point checklist to audit a website's technical SEO. Include checks for broken links, XML sitemaps, and Core Web Vitals.",
-        "trending": true
+        "trending": false
     },
     {
         "title": "📈 Google Analytics 4",
@@ -1723,7 +1723,7 @@
         "category": "HR",
         "desc": "Estimates fair pay.",
         "prompt": "You are a Compensation Analyst. What is the typical salary range for a Senior Product Designer in [CITY/REGION]? List the factors that might push a candidate to the top of that range.",
-        "trending": true
+        "trending": false
     },
     {
         "title": "📘 Employee Handbook",
@@ -1759,7 +1759,359 @@
         "desc": "Architects large scale apps.",
         "prompt": "You are a Principal Engineer. Outline the high-level architecture for designing a URL Shortener (like bit.ly). Discuss database choice, hashing algorithms, and handling high read traffic.",
         "trending": true
+    },
+    
+    {
+        "title": "🎥 Cinematic AI Video",
+        "category": "Video Generation",
+        "desc": "Generates a prompt for high-fidelity AI video creation.",
+        "prompt": "You are a Film Director. Write a detailed text-to-video prompt for a 5-second cinematic shot. Describe the subject (a cyberpunk detective), the action (walking through rain), the lighting (neon noir), and the camera movement (slow tracking shot).",
+        "trending": true
+    },
+    {
+        "title": "📸 Photorealistic Portrait",
+        "category": "Image Generation",
+        "desc": "Creates a prompt for a hyper-realistic human portrait.",
+        "prompt": "You are a Portrait Photographer. Write a Midjourney prompt for a hyper-realistic close-up of an elderly sailor. Specify parameters: 85mm lens, f/1.8 aperture, natural lighting, weather-beaten skin texture, and --ar 4:5.",
+        "trending": true
+    },
+    {
+        "title": "✨ Instagram Caption Aesthetic",
+        "category": "Social Media",
+        "desc": "Writes short, vibe-based captions.",
+        "prompt": "You are a Social Media Manager. Write 3 'aesthetic' Instagram captions for a photo of a coffee shop. Use lowercase text, minimal emojis, and keep it under 10 words.",
+        "trending": true
+    },
+    {
+        "title": "🚁 FPV Drone Shot Prompt",
+        "category": "Video Generation",
+        "desc": "Describes a fast-paced drone flight.",
+        "prompt": "You are a Drone Pilot. Write a video generation prompt for an FPV drone shot flying through a narrow canyon. Describe the speed (fast), the motion (banking left and right), and the environment (red rocks, sunny day).",
+        "trending": false
+    },
+    {
+        "title": "🎨 3D Icon Set Generator",
+        "category": "Image Generation",
+        "desc": "Prompts for cute 3D UI elements.",
+        "prompt": "You are a 3D Artist. Write a prompt to generate a set of 3D icons for a finance app (wallet, coin, graph). Style: Claymorphism, soft pastel colors, fluffy texture, isometric view, clean background.",
+        "trending": true
+    },
+    {
+        "title": "🎵 TikTok Viral Hook",
+        "category": "Social Media",
+        "desc": "Scripts the first 3 seconds of a video.",
+        "prompt": "You are a TikTok Strategist. Write 3 viral hooks (text-on-screen) for a video about 'Productivity Hacks'. The goal is to stop the scroll immediately.",
+        "trending": true
+    },
+    {
+        "title": "🎞️ Time-Lapse Video Prompt",
+        "category": "Video Generation",
+        "desc": "Describes a time-lapse scene.",
+        "prompt": "You are a Cinematographer. Write a text-to-video prompt for a time-lapse of a flower blooming. Describe the transition from bud to full bloom, the lighting change from day to night, and a static camera angle.",
+        "trending": false
+    },
+    {
+        "title": "✒️ Logo Vector Design",
+        "category": "Image Generation",
+        "desc": "Prompts for clean, flat vector logos.",
+        "prompt": "You are a Graphic Designer. Write a prompt for a minimal vector logo of a 'Fox'. Keywords: Flat design, negative space, orange and white, geometric shapes, white background, no shading.",
+        "trending": true
+    },
+    {
+        "title": "👔 LinkedIn Thought Leader",
+        "category": "Social Media",
+        "desc": "Writes engaging professional posts.",
+        "prompt": "You are a LinkedIn Ghostwriter. Write a post about 'Failure' that turns a negative experience into a learning lesson. Use short paragraphs (broetry style) and end with a question.",
+        "trending": true
+    },
+    {
+        "title": "🏰 Fantasy Landscape Art",
+        "category": "Image Generation",
+        "desc": "Prompts for epic environment art.",
+        "prompt": "You are a Concept Artist. Write a prompt for a fantasy landscape featuring a floating castle. Style: Oil painting, Studio Ghibli inspired, lush clouds, golden hour lighting, wide angle.",
+        "trending": false
+    },
+    {
+        "title": "📹 Product Commercial",
+        "category": "Video Generation",
+        "desc": "Prompts for a product showcase video.",
+        "prompt": "You are a Commercial Director. Write a video generation prompt for a luxury perfume bottle. Describe the camera rotating around the bottle, water splashes in slow motion, and a dark elegant background.",
+        "trending": true
+    },
+    {
+        "title": "🤣 Punny Caption Generator",
+        "category": "Social Media",
+        "desc": "Writes dad-joke style captions.",
+        "prompt": "You are a Comedian. Write 3 pun-filled captions for a picture of a cat sleeping in a box. Make them cheesy and lighthearted.",
+        "trending": false
+    },
+    {
+        "title": "👾 Pixel Art Sprite",
+        "category": "Image Generation",
+        "desc": "Prompts for retro game assets.",
+        "prompt": "You are a Game Artist. Write a prompt to generate a 32-bit pixel art character sheet of a knight. Include: Idle animation pose, running pose, attack pose. White background.",
+        "trending": false
+    },
+    {
+        "title": "📺 YouTube Video Description",
+        "category": "Social Media",
+        "desc": "Writes SEO-optimized video summaries.",
+        "prompt": "You are a YouTube Expert. Write a video description for a tutorial on 'How to Bake Bread'. Include the primary keyword in the first sentence, 3 timestamps, and links to social handles.",
+        "trending": false
+    },
+    {
+        "title": "🌊 Fluid Simulation Video",
+        "category": "Video Generation",
+        "desc": "Prompts for abstract motion graphics.",
+        "prompt": "You are a Motion Designer. Write a prompt for a 3D fluid simulation video. Describe colorful liquid mixing together, zero gravity, metallic texture, and 4k resolution.",
+        "trending": false
+    },
+    {
+        "title": "🖍️ Coloring Book Page",
+        "category": "Image Generation",
+        "desc": "Prompts for black and white line art.",
+        "prompt": "You are an Illustrator. Write a prompt for a children's coloring book page featuring a forest with animals. Keywords: Black and white lines, no shading, high contrast, simple shapes, white background.",
+        "trending": true
+    },
+    {
+        "title": "📌 Pinterest Pin Title",
+        "category": "Social Media",
+        "desc": "Writes clickable titles for pins.",
+        "prompt": "You are a Pinterest Marketer. Write 5 high-CTR titles for a Pin about 'Home Office Decor'. Use keywords like 'Inspiration', 'DIY', and 'Small Space'.",
+        "trending": false
+    },
+    {
+        "title": "🐩 Pixar Style Character",
+        "category": "Image Generation",
+        "desc": "Prompts for 3D animated style art.",
+        "prompt": "You are an Animation Director. Write a prompt for a Pixar-style 3D render of a cute robot dog. Style: RenderMan engine, soft lighting, expressive eyes, vibrant colors, 4k detail.",
+        "trending": true
+    },
+    {
+        "title": "🧟 Zombie Apocalypse Video",
+        "category": "Video Generation",
+        "desc": "Prompts for horror scenes.",
+        "prompt": "You are a Horror Director. Write a video prompt for a deserted city street. Describe: Foggy atmosphere, flickering street lights, a shadow moving in the distance, handheld camera shake.",
+        "trending": false
+    },
+    {
+        "title": "🐦 Twitter/X Thread Hook",
+        "category": "Social Media",
+        "desc": "Writes the first tweet of a thread.",
+        "prompt": "You are a Copywriter. Write a 'contrarian' hook for a Twitter thread about Marketing. State a controversial opinion to get engagement, then promise to explain why.",
+        "trending": true
+    },
+    {
+        "title": "👕 T-Shirt Design",
+        "category": "Image Generation",
+        "desc": "Prompts for merchandise graphics.",
+        "prompt": "You are a Merch Designer. Write a prompt for a vintage style T-shirt graphic of a skull and roses. Style: Distressed texture, 1980s rock band poster, limited color palette (red, white, black).",
+        "trending": false
+    },
+    {
+        "title": "🏎️ Car Chase Scene",
+        "category": "Video Generation",
+        "desc": "Prompts for high-action video.",
+        "prompt": "You are an Action Director. Write a video generation prompt for a sports car drifting around a corner at night. Describe: Smoke from tires, neon city lights reflecting on the car, fast shutter speed.",
+        "trending": false
+    },
+    {
+        "title": "🧵 Facebook Ad Headline",
+        "category": "Social Media",
+        "desc": "Writes punchy ad copy.",
+        "prompt": "You are an Ad Specialist. Write 3 headline options for a Facebook Ad selling 'Noise Cancelling Headphones'. Focus on the benefit of focus and silence.",
+        "trending": false
+    },
+    {
+        "title": "🏠 Interior Design Render",
+        "category": "Image Generation",
+        "desc": "Prompts for architectural visualization.",
+        "prompt": "You are an Interior Designer. Write a prompt for a modern Scandinavian living room. details: Minimalist furniture, large windows, natural light, indoor plants, neutral color palette, photorealistic.",
+        "trending": true
+    },
+    {
+        "title": "🌦️ Weather B-Roll Video",
+        "category": "Video Generation",
+        "desc": "Prompts for atmospheric stock footage.",
+        "prompt": "You are a Stock Footage Creator. Write a video prompt for rain falling on a window pane. Focus: Macro lens, shallow depth of field, city lights bokeh in the background, melancholic mood.",
+        "trending": false
+    },
+    {
+        "title": "🏷️ Sticker Sheet Design",
+        "category": "Image Generation",
+        "desc": "Prompts for die-cut stickers.",
+        "prompt": "You are a Sticker Artist. Write a prompt for a sticker sheet of 'Coffee Items'. Keywords: White border, die-cut, flat vector style, cute faces on mugs, vibrant colors, arranged in a grid.",
+        "trending": false
+    },
+    {
+        "title": "📢 Influencer Brand Deal",
+        "category": "Social Media",
+        "desc": "Scripts a sponsored story.",
+        "prompt": "You are an Influencer Coach. Write a 15-second script for an Instagram Story promoting a skincare brand. Include a personal hook, the product benefit, and a 'Link in Bio' call to action.",
+        "trending": false
+    },
+    {
+        "title": "🌌 Sci-Fi Portal Video",
+        "category": "Video Generation",
+        "desc": "Prompts for VFX scenes.",
+        "prompt": "You are a VFX Artist. Write a video prompt for a glowing interdimensional portal opening in a forest. Describe: Purple energy swirls, particle effects, wind blowing the trees, cinematic lighting.",
+        "trending": false
+    },
+    {
+        "title": "👗 Fashion Sketch",
+        "category": "Image Generation",
+        "desc": "Prompts for clothing design.",
+        "prompt": "You are a Fashion Designer. Write a prompt for a fashion sketch of an avant-garde evening gown. Style: Watercolor and ink, elongated figure, detailed fabric texture, runway background.",
+        "trending": false
+    },
+    {
+        "title": "📜 YouTube Title Generator",
+        "category": "Social Media",
+        "desc": "Creates click-worthy video titles.",
+        "prompt": "You are a YouTube Strategist. Generate 5 title options for a vlog about 'Traveling Solo'. Use power words and curiosity gaps (e.g., 'I wasn't expecting this').",
+        "trending": true
+    },
+    {
+        "title": "🍝 Food Photography",
+        "category": "Image Generation",
+        "desc": "Prompts for delicious food shots.",
+        "prompt": "You are a Food Stylist. Write a prompt for a gourmet burger photo. details: Melted cheese, steam rising, macro shot, dark rustic wooden table, professional studio lighting.",
+        "trending": false
+    },
+    {
+        "title": "🐺 Animal Documentary",
+        "category": "Video Generation",
+        "desc": "Prompts for nature clips.",
+        "prompt": "You are a Nature Documentarian. Write a video prompt for a wolf howling at the moon. Describe: Snowy mountain peak, breath visible in cold air, camera zooming in slowly.",
+        "trending": false
+    },
+    {
+        "title": "🖼️ Seamless Pattern",
+        "category": "Image Generation",
+        "desc": "Prompts for repeatable textures.",
+        "prompt": "You are a Textile Designer. Write a prompt for a seamless floral pattern. Style: William Morris inspired, intricate details, vines and roses, vintage color palette, tileable.",
+        "trending": false
+    },
+    {
+        "title": "🎙️ Podcast Intro Script",
+        "category": "Content",
+        "desc": "Writes audio intros.",
+        "prompt": "You are a Audio Producer. Write a 30-second intro script for a True Crime podcast. Set a spooky mood, introduce the host, and tease the mystery of the week.",
+        "trending": false
+    },
+    {
+        "title": "🕺 Dance Move Video",
+        "category": "Video Generation",
+        "desc": "Prompts for character animation.",
+        "prompt": "You are a Choreographer. Write a video prompt for a robot doing a breakdance move. Describe: Metallic body, sparks flying, fluid motion, concrete floor background.",
+        "trending": false
+    },
+    {
+        "title": "🏙️ Cyberpunk City",
+        "category": "Image Generation",
+        "desc": "Prompts for futuristic architecture.",
+        "prompt": "You are a Concept Artist. Write a prompt for a futuristic Tokyo street. Keywords: Neon signs, rain-slicked streets, flying cars, towering skyscrapers, purple and blue atmosphere.",
+        "trending": true
+    },
+    {
+        "title": "📱 App Store Screenshots",
+        "category": "Design",
+        "desc": "Writes copy for app preview images.",
+        "prompt": "You are an App Marketer. Write the short headline text for 3 App Store screenshots for a 'Meditation App'. Slide 1: Feature, Slide 2: Benefit, Slide 3: Social Proof.",
+        "trending": false
+    },
+    {
+        "title": "🎥 Slow Motion Explosion",
+        "category": "Video Generation",
+        "desc": "Prompts for action VFX.",
+        "prompt": "You are a VFX Supervisor. Write a video prompt for a colorful powder explosion in super slow motion. Describe: Red and blue powder, black background, high frame rate, crisp details.",
+        "trending": false
+    },
+    {
+        "title": "🧸 Knolling Photography",
+        "category": "Image Generation",
+        "desc": "Prompts for organized flat lays.",
+        "prompt": "You are a Photographer. Write a prompt for a 'knolling' (flat lay) photo of camping gear. items: Compass, map, knife, rope. Style: 90-degree angle, organized grid, neutral background, studio light.",
+        "trending": false
+    },
+    {
+        "title": "🐦 Tweet Rewriter",
+        "category": "Social Media",
+        "desc": "Optimizes text for Twitter/X.",
+        "prompt": "You are a Social Media Editor. Rewrite this long paragraph into a punchy, 280-character tweet. Use bullet points and an emoji to break up the text.",
+        "trending": false
+    },
+    {
+        "title": "🌋 Landscape Flyover",
+        "category": "Video Generation",
+        "desc": "Prompts for aerial nature shots.",
+        "prompt": "You are a Drone Operator. Write a video prompt for an aerial flyover of an active volcano. Describe: Magma bubbling, smoke rising, dark jagged rocks, wide cinematic angle.",
+        "trending": false
+    },
+    {
+        "title": "🃏 Tarot Card Design",
+        "category": "Image Generation",
+        "desc": "Prompts for mystical art.",
+        "prompt": "You are an Illustrator. Write a prompt for a Tarot card design of 'The Moon'. Style: Art Nouveau, intricate borders, gold and silver ink, mystical symbols, dark blue background.",
+        "trending": false
+    },
+    {
+        "title": "🤳 UGC Video Script",
+        "category": "Social Media",
+        "desc": "Scripts for user-generated content.",
+        "prompt": "You are a Content Creator. Write a script for a 30-second UGC (User Generated Content) video reviewing a new water bottle. Tone: Enthusiastic, casual, unboxing style.",
+        "trending": true
+    },
+    {
+        "title": "🖌️ Oil Painting Texture",
+        "category": "Image Generation",
+        "desc": "Prompts for traditional art styles.",
+        "prompt": "You are a Fine Artist. Write a prompt for a still life of fruit. Style: Thick impasto oil paint, visible brushstrokes, chiaroscuro lighting, classical composition.",
+        "trending": false
+    },
+    {
+        "title": "🐠 Underwater Reef Video",
+        "category": "Video Generation",
+        "desc": "Prompts for marine life scenes.",
+        "prompt": "You are a Diver. Write a video prompt for a coral reef scene. Describe: Colorful fish swimming, sunlight rays penetrating the water, swaying sea anemones, crystal clear blue water.",
+        "trending": false
+    },
+    {
+        "title": "🖼️ NFT Collection Base",
+        "category": "Image Generation",
+        "desc": "Prompts for generative art characters.",
+        "prompt": "You are a Digital Artist. Write a prompt for a base character for an NFT collection (e.g., a Bored Ape style). Subject: A cool lizard. Accessories: Sunglasses, hoodie. Background: Solid color.",
+        "trending": false
+    },
+    {
+        "title": "🎞️ Movie Poster Concept",
+        "category": "Design",
+        "desc": "Prompts for film marketing art.",
+        "prompt": "You are a Graphic Designer. Write a prompt for a minimalist movie poster for a horror film titled ' The Silence'. Keywords: Negative space, silhouette of a finger over lips, red and black, grainy texture.",
+        "trending": false
+    },
+    {
+        "title": "🔬 Microscopic Video",
+        "category": "Video Generation",
+        "desc": "Prompts for scientific visualization.",
+        "prompt": "You are a Scientist. Write a video prompt for a microscopic view of cells dividing. Describe: Soft membrane walls, glowing nucleus, fluid movement, high magnification style.",
+        "trending": false
+    },
+    {
+        "title": "🤖 Mecha Robot Blueprint",
+        "category": "Image Generation",
+        "desc": "Prompts for technical drawings.",
+        "prompt": "You are a Concept Artist. Write a prompt for a technical blueprint of a giant mecha robot. Style: White lines on blue background, annotated text, cross-section view, detailed schematics.",
+        "trending": false
+    },
+    {
+        "title": "📹 Zoom Background",
+        "category": "Image Generation",
+        "desc": "Prompts for virtual backgrounds.",
+        "prompt": "You are a Remote Worker. Write a prompt to generate a professional Zoom background. Scene: A modern home office with a bookshelf, blurry background (bokeh), warm lighting, no people.",
+        "trending": true
     }
+
 
 
 
